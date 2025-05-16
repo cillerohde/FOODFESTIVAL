@@ -16,8 +16,8 @@
   default: false;
   prefersdark: false;
   color-scheme: "light";
-  --color-base-100: #EE8E46;
-  --color-base-200: #ffffffff;
+  --color-base-100: #ffffffff;
+  --color-base-200: #EE8E46;
   --color-base-300: #0B5BF8;
   --color-base-content: oklch(21% 0.006 285.885);
   --color-primary: #0B5BF8;
@@ -47,8 +47,8 @@
 }
 
 @theme {
-  --color-base-100: #EE8E46;
-  --color-base-200: #ffffffff;
+  --color-base-100: #ffffffff;
+  --color-base-200: #EE8E46;
   --color-base-300: #0B5BF8;
   --color-base-content: oklch(21% 0.006 285.885);
   --color-primary: #0B5BF8;
