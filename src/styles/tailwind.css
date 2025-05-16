@@ -4,9 +4,64 @@
 @plugin '@tailwindcss/forms';
 
 
-@theme {
+@plugin "daisyui" {
   /* Her tilføjes theme variable // tokens */
+  themes:light:
 }
+
+
+
+@plugin "daisyui/theme" {
+  name: "light ";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #EE8E46;
+  --color-base-200: #ffffffff;
+  --color-base-300: #0B5BF8;
+  --color-base-content: oklch(21% 0.006 285.885);
+  --color-primary: #0B5BF8;
+  --color-primary-content: #ffffff;
+  --color-secondary: #EE8E46;
+  --color-secondary-content: #ffffff;
+  --color-accent: #ffffff;
+  --color-accent-content: #000000;
+  --color-neutral: #000000;
+  --color-neutral-content: #ffffffff;
+  --color-info: #0023A2;
+  --color-info-content: #ffffffff;
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: #000000;
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(50% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 0rem;
+  --size-selector: 0.3125rem;
+  --size-field: 0.3125rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  --color-base-100: #EE8E46;
+  --color-base-200: #ffffffff;
+  --color-base-300: #0B5BF8;
+  --color-base-content: oklch(21% 0.006 285.885);
+  --color-primary: #0B5BF8;
+  --color-primary-content: #ffffff;
+  --color-secondary: #EE8E46;
+  --color-secondary-content: #ffffff;
+  --color-accent: #ffffff;
+  --color-accent-content: #000000;
+  --color-neutral: #000000;
+  --color-neutral-content: #ffffffff;
+}
+
+
 
 @layer base {
   *,
