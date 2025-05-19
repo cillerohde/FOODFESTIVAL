@@ -1,0 +1,93 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import thumbsup from "../assets/images/thumbsup.png";
+import Headerbanner from "../components/Headerbanner.astro";
+import Header from "../components/Header.astro";
+import Herosectiontypografi from "../components/Herosectiontypografi.astro";
+import Billetcard from "../components/Billetcard.astro";
+import Primarybutton from "../components/Primarybutton.astro";
+---
+
+<MainLayout title="Titel">
+  <Headerbanner />
+  <Herosectiontypografi />
+<article class="p-[30px] sm:p-10">
+    <h5>Partout</h5>
+    <p>Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
+    <h7>Priser i forsalg </h7>
+    <div class="grid grid-cols-3 sm:grid-cols-3 gap-6">
+        <div class="relative">
+            <figure class="relative">
+                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+                    <h2 class="card-title">Standard</h2>
+                    <p class="text-center">170 kr.</p>
+                    <p class="">+ gebyr 12 kr.</p>
+                </div>
+                <Primarybutton />
+            </figure>
+        </div>
+        <div class="relative">
+            <figure class="relative">
+                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+                    <h2 class="card-title">Pensionister</h2>
+                    <p class="text-center">130 kr.</p>
+                    <p>(65+ og førtidspensionister) + gebyr 12 kr.</p>
+                </div>
+                <Primarybutton />
+            </figure>
+        </div>
+        <div class="relative">
+            <figure class="relative">
+                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+                    <h2 class="card-title">Studerende</h2>
+                    <p class="text-center">130 kr.</p>
+                    <p>+ gebyr 12 kr.</p>
+                </div>
+                <Primarybutton />
+            </figure>
+        </div>
+    </div>
+    <h5>Dagsbillet</h5>
+    <div class="grid grid-cols-3 sm:grid-cols-3 gap-6">
+        <div class="relative">
+            <figure class="relative">
+                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+                    <h2 class="card-title">Standard</h2>
+                    <p class="text-center">110 kr.</p>
+                    <p>+ gebyr 12 kr.</p>
+                </div>
+                <Primarybutton />
+            </figure>
+        </div>
+        <div class="relative">
+            <figure class="relative">
+                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+                    <h2 class="card-title">Pensionister</h2>
+                    <p class="text-center">80 kr</p>
+                    <p>(65+ og førtidspensionister) + gebyr 12 kr.</p>
+                </div>
+                <Primarybutton />
+            </figure>
+        </div>
+        <div class="relative">
+            <figure class="relative">
+                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+                    <h2 class="card-title">Studerende</h2>
+                    <p class="text-center">80 kr.</p>
+                    <p>+ gebyr 12 kr.</p>
+                </div>
+                <Primarybutton />
+            </figure>
+        </div>
+    </div>
+  </article>
+</MainLayout>
