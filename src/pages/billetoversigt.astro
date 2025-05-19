@@ -14,7 +14,7 @@ import Primarybutton from "../components/Primarybutton.astro";
 <MainLayout title="Titel">
   <Headerbanner />
   <Herosectiontypografi />
-  <article class="p-[30px] sm:p-10">
+  <article class="p-[30px] sm:p-60">
     <h5 class="brygada-1918-400 text-[20px] md:text-[60px]">Partout</h5>
     <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
     <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Priser i forsalg </h7>
@@ -91,13 +91,20 @@ import Primarybutton from "../components/Primarybutton.astro";
     </div>
   </article>
 
-  <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Priser i indgangen</p>
-
-  <p class="oto-sans-sora-sompeng-400">Billetter er dyrere i indgangen køb online og spar! Priser i indgangen:Partout: 205 kr. · Stud./Pensionist: 160 kr.Dagsbillet: 140 kr. · Stud./Pensionist: 110 kr. Du kan ombytte din dagsbillet til weekendbillet for kun 75 kr. i Informationen på Tangkrogen.</p>
-  <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Vilkår for online køb af billetter</h7>
-  <p class="oto-sans-sora-sompeng-400">Onlinesalg af billetter fortsætter til og med søndag den 7. september kl. 17.00. Muligheden for at købe en dagsbillet til forsalgspris online udløber kl. 00.00 dagen før. Hvis du eksempelvis skal købe en dagsbillet til søndag, skal du købe billetten lørdag inden kl. 23.59 for at få forsalgsprisen.</p>
-  <img src="/burgerbillede.svg" alt="billede" />
-
-  <img src="/manddervinker.svg" alt="billede" />
-  <img src="/mandderhænger.svg" alt="billede" />
+<div class="flex flex-col md:flex-row items-center gap-8 mt-8">
+    <div class="flex-1">
+        <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Priser i indgangen</p>
+        <p class="noto-sans-sora-sompeng-400">Billetter er dyrere i indgangen køb online og spar! Priser i indgangen: Partout: 205 kr. · Stud./Pensionist: 160 kr. Dagsbillet: 140 kr. · Stud./Pensionist: 110 kr. Du kan ombytte din dagsbillet til weekendbillet for kun 75 kr. i Informationen på Tangkrogen.</p>
+        <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Vilkår for online køb af billetter</h7>
+        <p class="noto-sans-sora-sompeng-400">Onlinesalg af billetter fortsætter til og med søndag den 7. september kl. 17.00. Muligheden for at købe en dagsbillet til forsalgspris online udløber kl. 00.00 dagen før. Hvis du eksempelvis skal købe en dagsbillet til søndag, skal du købe billetten lørdag inden kl. 23.59 for at få forsalgsprisen.</p>
+    </div>
+    <div class="flex flex-col gap-4 flex-1 items-center">
+       
+        <div class="relative w-full flex justify-center">
+            <img src="/burgerbillede.svg" alt="billede" />
+            <img src="/manddervinker.svg" alt="billede" class="absolute -top-10 left-1/4 -translate-x-1/2" />
+        </div>
+        <img src="/mandderhænger.svg" alt="billede" />
+    </div>
+</div>
 </MainLayout>
