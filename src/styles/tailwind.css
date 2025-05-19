@@ -59,6 +59,7 @@
   --color-accent-content: #000000;
   --color-neutral: #000000;
   --color-neutral-content: #ffffffff;
+  --color-info: #0023A2;
 }
 
 
@@ -78,4 +79,31 @@
 }
 @layer utilities{
   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Oi&display=swap');
+
+
+.brygada-1918-400 {
+  font-family: "Brygada 1918", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sora+Sompeng:wght@400..700&display=swap');
+.noto-sans-sora-sompeng-400{
+  font-family: "Noto Sans Sora Sompeng", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

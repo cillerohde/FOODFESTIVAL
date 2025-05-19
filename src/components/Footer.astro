@@ -1,6 +1,64 @@
 ---
+import SekundaerKnap from "./SekundaerKnap.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+
+<footer class="bg-base-100 text-neutral py-8 mx-[100px] sm:mx-4">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div>
+      <p class="font-semibold mb-2 text-base-200 noto-sans-sora-sompeng-400 text-[12px] sm:text-[20px]">Adresse:</p>
+      <ul class="space-y-1">
+        <li>
+          <a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]"> Adresse: Tangkrogen, 8000 Aarhus C </a>
+        </li>
+      </ul>
+
+      <p class="font-semibold mb-2 text-base-200 noto-sans-sora-sompeng-400 text-[12px] sm:text-[20px]">Kontakt:</p>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Mail: info@thefoodproject.dk</a></li>
+      </ul>
+      <p class="font-semibold mb-2 text-base-200 noto-sans-sora-sompeng-400 text-[12px] sm:text-[20px]">Kontoradresse:</p>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Studsgade 10A, 1. sal 8000 Aarhus C </a></li>
+      </ul>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" aria-label="Facebook">
+          <img src="/instagram.svg" alt="billede" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="/facebook.svg" alt="billede" />
+        </a>
+      </div>
+    </div>
+    <div>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Om vores mission</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Tilmeld Virksomhed</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Praktikant</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Handelspolitik</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Cookie- og persondatapolitik</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Sponsorer</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Engelsk</a></li>
+        <li><a href="#" class="hover:underline brygada-1918-400 text-[10px] md:text-[15px]">Kort over festivalsområder</a></li>
+      </ul>
+    </div>
+    <!-- On mobile, make this div span two columns using col-span-2 -->
+    <div class="order-first md:order-none col-span-2 md:col-span-1">
+      <h5 class="font-semibold mb-2 text-base-300 brygada-1918-400 flex justify-center text-[20px] md:text-[60px]">HEY!</h5>
+      <form class="flex flex-col space-y-2">
+        <label for="name" class="text-sm font-medium noto-sans-sora-sompeng-400 text-[12px] sm:text-[20px]">Jeg hedder </label>
+        <input id="name" name="name" type="text" class="p-2 border rounded" placeholder="Indtast dit navn..." />
+
+        <label for="email" class="text-sm font-medium noto-sans-sora-sompeng-400 text-[12px] sm:text-[20px]">Jeg vil gerne høre mere om næste års foodfestival min mail er</label>
+        <input id="email" name="email" type="email" class="p-2 border rounded" placeholder="Indtast din email..." />
+
+        <button type="submit" class="bg-color-accent text-white px-4 py-2 rounded hover:bg-opacity-80">Send</button>
+      </form>
+      <div class="flex justify-center mt-4">
+        <SekundaerKnap />
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center mt-8">
+    <div class="text-[60px] sm:text-[80px] md:text-[100px] text-base-200 oi-regular text-center" aria-hidden="true">Food festival</div>
+  </div>
+</footer>
