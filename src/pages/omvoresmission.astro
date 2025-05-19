@@ -1,0 +1,30 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Headerbanner from "../components/Headerbanner.astro";
+import Header from "../components/Header.astro";
+import Herosectiontypografi from "../components/Herosectiontypografi.astro";
+---
+
+<MainLayout title="Titel">
+  <Headerbanner />
+  <Herosectiontypografi />
+  <article class="p-[30px] sm:p-60">
+    <h5 class="brygada-1918-400 text-[20px] md:text-[60px]">Om vores mission</h5>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <div class="bg-white shadow p-6 flex flex-col items-center border-1 border-base-300">
+        <h6 class="text-xl font-semibold mb-2">Organisationen bag Food Festival</h6>
+        <p class="text-neutral text-center">Food Organisation of Denmark (FOOD) er organisationen bag Food Festival. FOOD er en nonprofit organisation, der arbejder for at dansk gastronomi bliver en vej til vækst, udvikling og oplevelser. Det sker gennem madoplevelser, formidling og udvikling af projekter til gavn for hele værdikæden i fødevarebranchen. Læs mere om Food Organisation of Denmark her.</p>
+      </div>
+      <div class="bg-white shadow p-6 flex flex-col items-center border-1 border-base-300">
+        <h6 class="text-xl font-semibold mb-2">Mission og vision</h6>
+        <p class="text-neutral text-center">Food Festivals mission er formidling og fornyelse af holdningen til kvaliteten af vores mad. Formidlingen gør gæsterne klogere på forståelsen af fødevarer, madlavningsteknikker og måltider. Festivalen giver gode oplevelser, som sætter fokus på at spise nyt, andet, bæredygtigt og lækkert. Festivalen samler de mest betydningsfulde kokke, producenter og madfolk i Aarhus.  Food Festival vil skabe national opmærksomhed omkring det høje niveau og det store potentiale, der ligger i Danmarks gode råvarer og produktionsmetoder. Visionen er at være Danmarks største årlige madbegivenhed - både for den almene brede befolkning og fødevareerhvervet.</p>
+      </div>
+      <div class="bg-white shadow p-6 flex flex-col items-center border-1 border-base-300">
+        <h6 class="text-xl font-semibold mb-2">Food Festival er Danmarks største madfestival</h6>
+        <p class="text-neutral text-center">
+          Over tre dage fejrer 30.000 glade festivalgæster fællesskabet om det gode måltid på Tangkrogen i Aarhus. Over 250 dedikerede fødevarevirksomheder, producenter, madhåndværkere, foreninger og organisationer går sammen om at skabe et farverigt univers af smagsoplevelser. Her kan gæsterne gå på opdagelse i madens mange facetter – fra det lille hverdagspift til den sublime kunst. Det myldrer naturligvis med lækre smagsprøver, men Food Festival byder også på en masse aktiviteter og workshops, der overrasker, underholder, giver aha-oplevelser og nye evner i køkkenet. Tangkrogens 50.000 m2 giver plads til over 250 unikke madoplevelser og sikrer, at både børn, voksne, unge og gamle, madnørder og almindeligt lækkersultne kan få en spændende og begivenhedsrig dag på Food Festival.
+        </p>
+      </div>
+    </div>
+  </article>
+</MainLayout>
