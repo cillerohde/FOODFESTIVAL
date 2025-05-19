@@ -14,80 +14,90 @@ import Primarybutton from "../components/Primarybutton.astro";
 <MainLayout title="Titel">
   <Headerbanner />
   <Herosectiontypografi />
-<article class="p-[30px] sm:p-10">
-    <h5>Partout</h5>
-    <p>Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
-    <h7>Priser i forsalg </h7>
+  <article class="p-[30px] sm:p-10">
+    <h5 class="brygada-1918-400 text-[20px] md:text-[60px]">Partout</h5>
+    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
+    <h7 class="brygada-1918-400 font-bol text-[20px] md:text-[30px]">Priser i forsalg </h7>
     <div class="grid grid-cols-3 sm:grid-cols-3 gap-6">
-        <div class="relative">
-            <figure class="relative">
-                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
-                    <h2 class="card-title">Standard</h2>
-                    <p class="text-center">170 kr.</p>
-                    <p class="">+ gebyr 12 kr.</p>
-                </div>
-                <Primarybutton />
-            </figure>
-        </div>
-        <div class="relative">
-            <figure class="relative">
-                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
-                    <h2 class="card-title">Pensionister</h2>
-                    <p class="text-center">130 kr.</p>
-                    <p>(65+ og førtidspensionister) + gebyr 12 kr.</p>
-                </div>
-                <Primarybutton />
-            </figure>
-        </div>
-        <div class="relative">
-            <figure class="relative">
-                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
-                    <h2 class="card-title">Studerende</h2>
-                    <p class="text-center">130 kr.</p>
-                    <p>+ gebyr 12 kr.</p>
-                </div>
-                <Primarybutton />
-            </figure>
-        </div>
+      <div class="relative">
+        <figure class="relative">
+          <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+          <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+            <h2 class="card-title text-[15px] md:text-[30px]">Standard</h2>
+            <p class="text-center text-[20px] md:text-[40px]">170 kr.</p>
+            <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+          </div>
+          <Primarybutton />
+        </figure>
+      </div>
+      <div class="relative">
+        <figure class="relative">
+          <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+          <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+            <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
+            <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+            <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
+          </div>
+          <Primarybutton />
+        </figure>
+      </div>
+      <div class="relative">
+        <figure class="relative">
+          <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+          <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+            <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
+            <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+            <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+          </div>
+          <Primarybutton />
+        </figure>
+      </div>
     </div>
-    <h5>Dagsbillet</h5>
+    <h5 class="brygada-1918-400 text-[20px] md:text-[60px]">Dagsbillet</h5>
     <div class="grid grid-cols-3 sm:grid-cols-3 gap-6">
-        <div class="relative">
-            <figure class="relative">
-                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
-                    <h2 class="card-title">Standard</h2>
-                    <p class="text-center">110 kr.</p>
-                    <p>+ gebyr 12 kr.</p>
-                </div>
-                <Primarybutton />
-            </figure>
-        </div>
-        <div class="relative">
-            <figure class="relative">
-                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
-                    <h2 class="card-title">Pensionister</h2>
-                    <p class="text-center">80 kr</p>
-                    <p>(65+ og førtidspensionister) + gebyr 12 kr.</p>
-                </div>
-                <Primarybutton />
-            </figure>
-        </div>
-        <div class="relative">
-            <figure class="relative">
-                <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
-                    <h2 class="card-title">Studerende</h2>
-                    <p class="text-center">80 kr.</p>
-                    <p>+ gebyr 12 kr.</p>
-                </div>
-                <Primarybutton />
-            </figure>
-        </div>
+      <div class="relative">
+        <figure class="relative">
+          <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+          <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+            <h2 class="card-title text-[15px] md:text-[30px]">Standard</h2>
+            <p class="text-center text-[20px] md:text-[40px]">110 kr.</p>
+            <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+          </div>
+          <Primarybutton />
+        </figure>
+      </div>
+      <div class="relative">
+        <figure class="relative">
+          <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+          <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+            <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
+            <p class="text-center text-[20px] md:text-[40px]">80 kr</p>
+            <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
+          </div>
+          <Primarybutton />
+        </figure>
+      </div>
+      <div class="relative">
+        <figure class="relative">
+          <img src="/billetcarddesktop.svg" alt="Shoes" class="w-full h-auto" />
+          <div class="absolute inset-0 flex flex-col justify-center items-center bg-opacity-40 text-neutral p-4">
+            <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
+            <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
+            <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+          </div>
+          <Primarybutton />
+        </figure>
+      </div>
     </div>
   </article>
+
+  <h7 class="brygada-1918-400 font-bol text-[20px] md:text-[30px]">Priser i indgangen </h7>
+
+  <p>Billetter er dyrere i indgangen – køb online og spar! Priser i indgangen:Partout: 205 kr. · Stud./Pensionist: 160 kr.Dagsbillet: 140 kr. · Stud./Pensionist: 110 kr. Du kan ombytte din dagsbillet til weekendbillet for kun 75 kr. i Informationen på Tangkrogen.</p>
+  <h7 class="brygada-1918-400 font-bol text-[20px] md:text-[30px]">Vilkår for online køb af billetter</h7>
+  <p>Onlinesalg af billetter fortsætter til og med søndag den 7. september kl. 17.00. Muligheden for at købe en dagsbillet til forsalgspris online udløber kl. 00.00 dagen før. Hvis du eksempelvis skal købe en dagsbillet til søndag, skal du købe billetten lørdag inden kl. 23.59 for at få forsalgsprisen.</p>
+  <img src="/burgerbillede.svg" alt="billede" />
+
+  <img src="/manddervinker.svg" alt="billede" />
+  <img src="/mandderhænger.svg" alt="billede" />
 </MainLayout>
