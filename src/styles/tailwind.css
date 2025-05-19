@@ -115,3 +115,13 @@
   font-weight: 400;
   font-style: italic;
 }
+
+@theme {
+  /*Infinite scroll animation*/
+  --animate-infinite-scroll: infinite-scroll 130s linear infinite;  
+
+  @keyframes infinite-scroll {    
+  from { transform: translateX(0);}    
+  to { transform: translateX(-100%);}  
+  }
+}
