@@ -14,10 +14,10 @@ import Primarybutton from "../components/Primarybutton.astro";
 <MainLayout title="Titel">
   <Headerbanner />
   <Herosectiontypografi />
-  <article class="p-[30px] sm:p-60">
-    <h5 class="brygada-1918-400 text-[20px] md:text-[60px]">Partout</h5>
-    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
-    <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Priser i forsalg </h7>
+  <article class="p-[30px] sm:p-60 bg-[#0B5BF8]/5 mt-7">
+    <h5 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-7">Partout</h5>
+    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mt-7 mb-7">Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
+    <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mt-7 mb-7">Priser i forsalg </h7>
     <div class="grid grid-cols-3 sm:grid-cols-3 gap-6">
       <div class="relative">
         <figure class="relative">
@@ -53,7 +53,7 @@ import Primarybutton from "../components/Primarybutton.astro";
         </figure>
       </div>
     </div>
-    <h5 class="brygada-1918-400 text-[20px] md:text-[60px]">Dagsbillet</h5>
+    <h5 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-7">Dagsbillet</h5>
     <div class="grid grid-cols-3 sm:grid-cols-3 gap-6">
       <div class="relative">
         <figure class="relative">
@@ -93,20 +93,18 @@ import Primarybutton from "../components/Primarybutton.astro";
   <article class="p-[30px] sm:p-60">
     <div class="flex flex-col md:flex-row items-center gap-8 mt-8">
       <div class="flex-1">
-        <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Priser i indgangen</p>
-        <p class="noto-sans-sora-sompeng-400">Billetter er dyrere i indgangen køb online og spar! Priser i indgangen: Partout: 205 kr. · Stud./Pensionist: 160 kr. Dagsbillet: 140 kr. · Stud./Pensionist: 110 kr. Du kan ombytte din dagsbillet til weekendbillet for kun 75 kr. i Informationen på Tangkrogen.</p>
-        <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px]">Vilkår for online køb af billetter</h7>
-        <p class="noto-sans-sora-sompeng-400">Onlinesalg af billetter fortsætter til og med søndag den 7. september kl. 17.00. Muligheden for at købe en dagsbillet til forsalgspris online udløber kl. 00.00 dagen før. Hvis du eksempelvis skal købe en dagsbillet til søndag, skal du købe billetten lørdag inden kl. 23.59 for at få forsalgsprisen.</p>
+        <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mb-7">Priser i indgangen</p>
+        <p class="noto-sans-sora-sompeng-400 mt-7 mb-7">Billetter er dyrere i indgangen køb online og spar! Priser i indgangen: Partout: 205 kr. · Stud./Pensionist: 160 kr. Dagsbillet: 140 kr. · Stud./Pensionist: 110 kr. Du kan ombytte din dagsbillet til weekendbillet for kun 75 kr. i Informationen på Tangkrogen.</p>
+        <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mt-7 mb-7">Vilkår for online køb af billetter</h7>
+        <p class="noto-sans-sora-sompeng-400 mt-7 mb-7">Onlinesalg af billetter fortsætter til og med søndag den 7. september kl. 17.00. Muligheden for at købe en dagsbillet til forsalgspris online udløber kl. 00.00 dagen før. Hvis du eksempelvis skal købe en dagsbillet til søndag, skal du købe billetten lørdag inden kl. 23.59 for at få forsalgsprisen.</p>
       </div>
-      <div class="flex flex-col gap-4 flex-1 items-center">
-        <div class="relative w-full flex justify-center">
+      <div class="flex flex-col gap-4 flex-1 items-center hidden md:flex">
+        <div class="relative w-full flex justify-center mb-30">
           <img src="/burgerbillede.svg" alt="billede" />
           <img src="/manddervinker.svg" alt="billede" class="absolute -top-10 left-1/4 -translate-x-1/2" />
+          <img src="/mandderhænger.svg" alt="billede" class="absolute top-120 left-3/4 -translate-x-1/2" />
         </div>
-        <img src="/mandderhænger.svg" alt="billede" />
       </div>
     </div>
   </article>
 </MainLayout>
-
-
