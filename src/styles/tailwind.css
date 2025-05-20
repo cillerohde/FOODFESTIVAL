@@ -116,6 +116,20 @@
   font-style: italic;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+.climate-crisis-900{
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2000;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
+}
+
+
+
 /*Animationer*/
 
 @theme {
