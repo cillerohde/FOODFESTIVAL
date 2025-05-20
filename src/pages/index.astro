@@ -43,20 +43,25 @@ import Header from "../components/Header.astro";
 
 
 
-<div class="max-w-lg pl-4">
-  <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
-    Glæd dig til tre smagfulde dage fyldt med kulinariske oplevelser, inspiration og aktiviteter for hele familien.
-  </p>
-  <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
-    Mød over 250 passionerede madhåndværkere og producenter, og lad dig forkæle af alt det bedste fra det nordiske køkken.
-  </p>
-  <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
-    Så spis dig igennem 7 festivalområder, deltag i et hav af gratis workshops, gratis showcookninger og meget mere!
-  </p>
-  <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">
-    Vi ses til en uforglemmelig Food Festival på Tangkrogen i Aarhus!
-  </p>
+<div class="flex items-start space-x-6">
+  <div class="max-w-lg pl-4">
+    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
+      Glæd dig til tre smagfulde dage fyldt med kulinariske oplevelser, inspiration og aktiviteter for hele familien.
+    </p>
+    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
+      Mød over 250 passionerede madhåndværkere og producenter, og lad dig forkæle af alt det bedste fra det nordiske køkken.
+    </p>
+    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
+      Så spis dig igennem 7 festivalområder, deltag i et hav af gratis workshops, gratis showcookninger og meget mere!
+    </p>
+    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">
+      Vi ses til en uforglemmelig Food Festival på Tangkrogen i Aarhus!
+    </p>
+  </div>
+
+  <img src="/public/forsidehånd.webp" alt="" class=" absolute right-[-80px] bottom-10 w-[60%] h-auto max-w-none" style="transform: scaleX(-1);" /> 
 </div>
+
 
 <div class="absolute -bottom-50 left-[62%] z-10" style="transform: translateX(-50%) rotate(-10deg);">
   <img src="/billetcarddesktop.svg" alt="Billetter" class="w-[300px] h-auto mx-auto" />
@@ -72,10 +77,44 @@ import Header from "../components/Header.astro";
 </div>
 
 </div>
+</div>
+
+<div class="overflow-hidden w-full relative mt-2xs0">
+  <div id="slideshow" class="flex transition-transform duration-700 ease-in-out">
+    <img src="/public/img1.webp" alt="" class="w-full max-w-none" />
+    <img src="/public/img2.webp" alt="" class="w-full max-w-none" />
+    <img src="/public/img3.webp" alt="" class="w-full max-w-none" />
+    <img src="/public/img4.webp" alt="" class="w-full max-w-none" />
+    <img src="/public/img5.webp" alt="" class="w-full max-w-none" />
+    <img src="/public/img6.webp" alt="" class="w-full max-w-none" />
+    <img src="/public/img7.webp" alt="" class="w-full max-w-none" />
+  </div>
+</div>
+
+
+<div>
+  <h6 class="bg-[#0B5BF8]/5 text-base-300 text-center brygada-1918-400 text-[24px] md:text-[32px] font-bold p-50 ">
+    Billetterne er billigere online <br>
+    - Køb & spar!
+  </h6>
+</div>
+
+<div class="flex items-center justify-between border border-base-200 relative">
+  <p class="text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+  <div class="w-[2px] h-[50px] bg-base-200"></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+  <div class="w-[2px] h-[50px] bg-base-200 "></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+</div>
+
+<div class="border-b border-base-200">
+
 
 
 </div>
-  </article>
+
+
+</article>
 
   
 </MainLayout>
