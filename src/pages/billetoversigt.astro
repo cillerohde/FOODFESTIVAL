@@ -19,111 +19,123 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
   </article>
 
   <article class="p-[30px] sm:p-30">
-    <div class="relative inline-block">
-      <img src="/billetcard.svg" alt="Main Image" class="" />
-      <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
-          <figure class="relative">
-            <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-              <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
-              <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
-              <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-              <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+    <div class="flex flex-row items-center justify-center gap-8 w-full">
+      <div class="flex flex-1"></div>
+      <div class="flex flex-row items-center justify-center gap-8">
+        <div class="relative inline-block">
+          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
+              <figure class="relative">
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
+                  <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
+                  <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+                  <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                </div>
+                <Primarybutton />
+              </figure>
             </div>
-            <Primarybutton />
-          </figure>
+          </div>
+        </div>
+
+        <div class="relative inline-block">
+          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
+              <figure class="relative">
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
+                  <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
+                  <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+                  <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                </div>
+                <Primarybutton />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative inline-block">
+          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
+              <figure class="relative">
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
+                  <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
+                  <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+                  <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                </div>
+                <Primarybutton />
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="flex flex-1"></div>
     </div>
 
-    <div class="relative inline-block">
-      <img src="/billetcard.svg" alt="Main Image" class="" />
-      <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
-          <figure class="relative">
-            <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-              <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
-              <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
-              <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
-              <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
-            </div>
-            <Primarybutton />
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <div class="relative inline-block">
-      <img src="/billetcard.svg" alt="Main Image" class="" />
-      <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
-          <figure class="relative">
-            <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-              <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
-              <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
-              <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-              <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
-            </div>
-            <Primarybutton />
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <h5 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-7">Dagsbillet</h5>
+    <h5 class="brygada-1918-400 text-[20px] md:text-[50px] mt-10 mb-7 sm:mt-15">Dagsbillet</h5>
     <div class="flex justify-end mb-7">
       <p class="max-w-60 text-right text-[12px] md:text-[16px] rotate-6 inline-block">*Enkelte events kræver tilmelding eller ekstra betaling, hvilket vil fremgå tydeligt i programmet.</p>
     </div>
 
-    <div class="relative inline-block">
-      <img src="/billetcard.svg" alt="Main Image" class="" />
-      <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
-          <figure class="relative">
-            <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-              <h2 class="card-title text-[15px] md:text-[30px]">Standard</h2>
-              <p class="text-center text-[20px] md:text-[40px]">110 kr.</p>
-              <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-              <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+    <div class="flex flex-row items-center justify-center gap-8 w-full">
+      <div class="flex flex-1"></div>
+      <div class="flex flex-row items-center justify-center gap-8">
+        <div class="relative inline-block">
+          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
+              <figure class="relative">
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
+                  <h2 class="card-title text-[15px] md:text-[30px]">Standard</h2>
+                  <p class="text-center text-[20px] md:text-[40px]">110 kr.</p>
+                  <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                </div>
+                <Primarybutton />
+              </figure>
             </div>
-            <Primarybutton />
-          </figure>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="relative inline-block">
-      <img src="/billetcard.svg" alt="Main Image" class="" />
-      <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
-          <figure class="relative">
-            <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-              <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
-              <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
-              <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
-              <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+        <div class="relative inline-block">
+          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
+              <figure class="relative">
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
+                  <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
+                  <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
+                  <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                </div>
+                <Primarybutton />
+              </figure>
             </div>
-            <Primarybutton />
-          </figure>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="relative inline-block">
-      <img src="/billetcard.svg" alt="Main Image" class="" />
-      <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
-          <figure class="relative">
-            <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-              <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
-              <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
-              <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-              <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+        <div class="relative inline-block">
+          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+            <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
+              <figure class="relative">
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
+                  <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
+                  <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
+                  <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                </div>
+                <Primarybutton />
+              </figure>
             </div>
-            <Primarybutton />
-          </figure>
+          </div>
         </div>
       </div>
+      <div class="flex flex-1"></div>
     </div>
   </article>
 
