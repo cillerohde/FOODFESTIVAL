@@ -1,0 +1,45 @@
+---
+// src/components/LoginModal.astro
+---
+
+<!-- Modal wrapper -->
+<div id="login-modal" class="fixed inset-0 flex items-center justify-center bg-black z-50">
+  <div class="bg-gray-100 p-8 rounded shadow-lg w-full max-w-sm text-center font-sans">
+    <h1 class="text-2xl font-semibold mb-2">Login</h1>
+    <p class="text-sm mb-2">3. Semesters eksame Digital Design</p>
+    <p class="text-xs text-gray-600 mb-4">The password is <code>kea</code></p>
+
+    <form id="login-form">
+      <input
+        type="password"
+        name="pass"
+        placeholder="Password"
+        class="w-full mb-4 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring focus:border-blue-500"
+      />
+      <input
+        type="submit"
+        value="Login"
+        class="w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm rounded cursor-pointer"
+      />
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const pass = e.target.pass.value;
+    if (pass === "kea") {
+      document.getElementById("login-modal").remove();
+      localStorage.setItem("iform-totally-logged-in", true);
+    } else {
+      alert("Wrong password");
+    }
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("iform-totally-logged-in")) {
+      document.getElementById("login-modal")?.remove();
+    }
+  });
+</script>
