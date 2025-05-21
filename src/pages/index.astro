@@ -6,37 +6,37 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Headerbanner from "../components/Headerbanner.astro";
 import Header from "../components/Header.astro";
+
 ---
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet" />
 
 <MainLayout title="Titel">
   <article>
 	
     <Headerbanner />
-<div class="border-b border-l border-r border-base-300 mx-20 p-20 relative">
+<div class="border-b border-l border-r border-base-300 mx-20 p-20 relative mb-10 pt-[500px]">
 
 <div class="flex items-center w-full">
   <!-- FOOD til venstre -->
-  <h1 class="text-base-200 text-[60px] md:text-[180px] font-normal font-['Oi'] leading-none">
+    <h1 class="absolute left-[-60px] top-20 text-base-200 text-[60px] md:text-[180px] font-normal oi-regular leading-none">
     FOOD
   </h1>
 
   <!-- Oval til højre -->
-  <div class="ml-auto border border-base-content rounded-full px-4 py-2">
-    <p class="text-center text-[20px] md:text-[60px] font-bold brygada-1918-400 leading-none">
-      5.-7.<br>SEPTEMBER 2025
-    </p>
-  </div>
+
 </div>
 
 
 
   <!-- FESTIVAL -->
-  <h1 class="text-base-200 text-[120px] md:text-[180px] font-normal font-['Oi'] leading-none m-0 p-0">
+  <h1 class="text-base-200 absolute left-[-40px] top-60 text-[120px] md:text-[180px] oi-regular leading-none m-0 p-0">
     FESTIVAL
   </h1>
 
   <!-- ÅRHUS -->
-  <h2 class="text-base-300 inria-serif-regular-italic text-right text-[40px] md:text-[120px] leading-none m-0 p-0">
+  <h2 class="text-base-300 absolute right-20 top-80 inria-serif-regular-italic text-right text-[40px] md:text-[170px] leading-none m-0 p-0">
     ÅRHUS
   </h2>
 
@@ -59,7 +59,7 @@ import Header from "../components/Header.astro";
     </p>
   </div>
 
-  <img src="/public/forsidehånd.webp" alt="" class=" absolute right-[-80px] bottom-10 w-[60%] h-auto max-w-none" style="transform: scaleX(-1);" /> 
+  <img src="/public/forsidehånd.webp" alt="" class=" absolute left-150 bottom-[-30px] w-[70%] h-auto max-w-none" style="transform: scaleX(-1);" /> 
 </div>
 
 
@@ -107,12 +107,32 @@ import Header from "../components/Header.astro";
   <p class="text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
 </div>
 
-<div class="border-b border-base-200">
-
-
-
+<div class=" flex items-center justify-between border border-base-200 relative">
+<p class="text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+  <div class="w-[2px] h-[50px] bg-base-200"></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+  <div class="w-[2px] h-[50px] bg-base-200 "></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
 </div>
 
+<div class=" flex items-center justify-between border border-base-200 relative">
+<p class="text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+  <div class="w-[2px] h-[50px] bg-base-200"></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+  <div class="w-[2px] h-[50px] bg-base-200 "></div>
+</div>
+
+<div class=" flex items-center justify-between border border-base-200 relative">
+<p class="text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag </p>
+  <div class="w-[2px] h-[50px] bg-base-200"></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Copenhagen Destillery</p>
+  <div class="w-[2px] h-[50px] bg-base-200 "></div>
+  <p class="text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+</div>
+
+<a href="/prisliste" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10">
+  SE HELE PROGRAMMET HER
+</a>
 
 </article>
 
