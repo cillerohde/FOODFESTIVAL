@@ -133,12 +133,12 @@
 /*Animationer*/
 
 @theme {
-  /*Infinite scroll animation*/
-  --animate-infinite-scroll: infinite-scroll 130s linear infinite;  
+  /* Infinite scroll animation */
+  --animate-infinite-scroll: infinite-scroll 500s linear infinite;  
 
   @keyframes infinite-scroll {    
-  from { transform: translateX(0);}    
-  to { transform: translateX(-100%);}  
+    from { transform: translateX(0);}
+    to { transform: translateX(-400%);} /* Increased from -300% to -400% to fill more than the screen */
   }
 }
 
@@ -218,4 +218,13 @@
 .jello-vertical {
 	-webkit-animation: jello-vertical 22s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
 	        animation: jello-vertical 22s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+}
+
+
+@keyframes moveAcross {
+  100% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-move {
+  animation: moveAcross 150s linear infinite;
 }
