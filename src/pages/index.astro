@@ -65,8 +65,8 @@ import Login from "../components/Login.astro";
 </div>
 
 
-<div class="absolute -bottom-50 left-[62%] z-10" style="transform: translateX(-50%) rotate(-10deg);">
-  <img src="/billetcarddesktop.svg" alt="Billetter" class="w-[300px] h-auto mx-auto" />
+<div class="absolute -bottom-50 left-[62%] z-30" style="transform: translateX(-50%) rotate(-10deg);">
+  <img src="/billetcard.svg" alt="Billetter" class="w-[300px] h-auto mx-auto" />
   
 <div class="absolute inset-0 flex flex-col justify-center items-center text-neutral">
   <div class="flex flex-col items-center space-y-2 md:space-y-4 text-center">
@@ -74,22 +74,36 @@ import Login from "../components/Login.astro";
     <p class="text-[14px] md:text-[20px]">Partoutbillet: 170 kr.</p>
     <p class="text-[14px] md:text-[20px]">Dagsbillet: 110 kr.</p>
     <p class="text-[14px] md:text-[20px]">Studerende &<br>Pensionist rabat</p>
-    <p class="text-[14px] md:text-[20px]">Børn til og med 10 år er gratis.</p>
+    <p class="text-[14px] md:text-[20px]">Børn til og med 10 år <br> er gratis.</p>
+   <a href="/billetoversigt">
+  <Button>KØB HER</Button>
+</a>
+
   </div>
+  
 </div>
 
 </div>
 </div>
 
-<div class="overflow-hidden w-full relative mt-2xs0">
-  <div id="slideshow" class="flex transition-transform duration-700 ease-in-out">
-    <img src="/public/img1.webp" alt="" class="w-full max-w-none" />
-    <img src="/public/img2.webp" alt="" class="w-full max-w-none" />
-    <img src="/public/img3.webp" alt="" class="w-full max-w-none" />
-    <img src="/public/img4.webp" alt="" class="w-full max-w-none" />
-    <img src="/public/img5.webp" alt="" class="w-full max-w-none" />
-    <img src="/public/img6.webp" alt="" class="w-full max-w-none" />
-    <img src="/public/img7.webp" alt="" class="w-full max-w-none" />
+<div class="overflow-hidden w-full relative mt-20 group">
+  <div
+    id="slideshow"
+    class="flex transition-transform duration-[2000ms] ease-in-out"
+  >
+    <img src="/public/img1.webp" alt="" class="max-w-none" />
+    <img src="/public/img2.webp" alt="" class="max-w-none" />
+    <img src="/public/img3.webp" alt="" class="max-w-none" />
+    <img src="/public/img4.webp" alt="" class="max-w-none" />
+    <img src="/public/img5.webp" alt="" class="max-w-none" />
+    <img src="/public/img6.webp" alt="" class="max-w-none" />
+    <img src="/public/img7.webp" alt="" class="max-w-none" />
+    <!-- Clone of first slide -->
+    <img src="/public/img8.webp" alt="" class="max-w-none" />
+    <img src="/public/img9.webp" alt="" class="max-w-none" />
+        <img src="/public/img10.webp" alt="" class="max-w-none" />
+    <img src="/public/img11.webp" alt="" class="max-w-none" />
+
   </div>
 </div>
 
@@ -102,34 +116,34 @@ import Login from "../components/Login.astro";
 </div>
 
 <div class="flex items-center justify-between border border-base-200 relative">
-  <p class="text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
   <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
   <div class="w-[2px] h-[50px] bg-base-200 "></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
 </div>
 
 <div class=" flex items-center justify-between border border-base-200 relative">
-<p class="text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+<p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
   <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
   <div class="w-[2px] h-[50px] bg-base-200 "></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
 </div>
 
 <div class=" flex items-center justify-between border border-base-200 relative">
-<p class="text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+<p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
   <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
   <div class="w-[2px] h-[50px] bg-base-200 "></div>
 </div>
 
 <div class=" flex items-center justify-between border border-base-200 relative">
-<p class="text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag </p>
+<p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag </p>
   <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Copenhagen Destillery</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Destillery</p>
   <div class="w-[2px] h-[50px] bg-base-200 "></div>
-  <p class="text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
 </div>
 
 <a href="/prisliste" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10">
@@ -140,3 +154,22 @@ import Login from "../components/Login.astro";
 
   
 </MainLayout>
+
+<script>
+const slideshow = document.getElementById("slideshow");
+const slideWidth = slideshow.scrollWidth / 2; // Halvdelen er nok, da vi har dubleret billederne
+let currentX = 0;
+
+function animate() {
+  currentX -= 200; // lavere = langsommere
+  if (Math.abs(currentX) >= slideWidth) {
+    // Her justerer vi uden hak
+    currentX += slideWidth;
+  }
+  slideshow.style.transform = `translateX(${currentX}px)`;
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+</script>
