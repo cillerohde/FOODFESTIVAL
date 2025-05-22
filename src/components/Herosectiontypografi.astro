@@ -1,18 +1,58 @@
+---
+import "../styles/tailwind.css";
+---
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet" />
 
 <div class="mt-7">
   <div class="relative inline-block w-full">
-    <img src="/herosectiontypografi.jpg" alt="Sample Image" class="w-full h-auto" />
+    <div class="overflow-hidden w-full relative mt-7 group">
+      <div id="slideshow" class="flex gap-4 transition-transform duration-[2000ms] ease-in-out">
+      <img src="/Billede1.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede2.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede3.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede4.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede1.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede2.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede3.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <!-- Clone of first slide -->
+      <img src="/Billede4.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede1.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede2.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      <img src="/Billede3.svg" alt="" class="max-w-none w-40 h-40 md:w-[400px] md:h-[400px]" />
+      </div>
+    </div>
+
     <div class="absolute top-1/2 right-0 md:right-40 transform -translate-y-1/2 flex items-center justify-end jello-vertical">
       <h1 class="text-base-200 text-4xl md:text-8xl font-bold bg-opacity-50 p-2 rounded oi-regular">FESTIVAL</h1>
     </div>
-    <div class="absolute left-10 md:left-20 bottom-10 md:bottom-20 flex items-center justify-center jello-vertical">
+    <div class="absolute left-10 md:left-20 bottom-10 md:bottom-52 flex items-center justify-center jello-vertical">
       <h1 class="text-base-200 text-4xl md:text-8xl font-bold bg-opacity-50 p-2 rounded oi-regular">FOOD</h1>
     </div>
-    <div class="absolute right-20 bottom-[-60px] flex items-center justify-end">
+    <div class="absolute right-20 bottom-2 md:bottom-3 flex items-center justify-end">
       <h1 class="text-base-300 text-4xl md:text-8xl font-bold bg-opacity-50 p-2 rounded inria-serif-regular-italic">ÅRHUS</h1>
     </div>
   </div>
 </div>
+
+
+</div>
+<script>
+  const slideshow = document.getElementById("slideshow");
+  const slideWidth = slideshow.scrollWidth / 2; // Halvdelen er nok, da vi har dubleret billederne
+  let currentX = 0;
+
+  function animate() {
+    currentX -= 200; // lavere = langsommere
+    if (Math.abs(currentX) >= slideWidth) {
+      // Her justerer vi uden hak
+      currentX += slideWidth;
+    }
+    slideshow.style.transform = `translateX(${currentX}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
