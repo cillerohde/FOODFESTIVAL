@@ -21,12 +21,14 @@ import Login from "../components/Login.astro";
 <div class="border-b border-l border-r border-base-300 mx-20 p-20 relative mb-10 pt-[500px]">
 
 <div class="flex items-center w-full">
+
+    <!-- Oval til højre -->
+<img src="/public/sorteclipse.svg" alt="" class="absolute right-50 top-2">
   <!-- FOOD til venstre -->
     <h1 class="absolute left-[-60px] top-20 text-base-200 text-[60px] md:text-[180px] font-normal oi-regular leading-none">
     FOOD
   </h1>
 
-  <!-- Oval til højre -->
 
 </div>
 
@@ -114,36 +116,83 @@ import Login from "../components/Login.astro";
     - Køb & spar!
   </h6>
 </div>
+<!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
+<div class="overflow-hidden w-full relative mt-10">
+  <div id="text-slider-left" class="flex whitespace-nowrap animate-slide-left">
+    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+      <img src="/public/hotdog.svg" alt="" class="w-10">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+      <img src="/public/hotdog.svg" alt="" class="w-10">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+    </div>
+  </div>
 
-<div class="flex items-center justify-between border border-base-200 relative">
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
-  <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
-  <div class="w-[2px] h-[50px] bg-base-200 "></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
-</div>
+  <div id="text-slider-right" class="flex whitespace-nowrap animate-slide-right">
+    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+      <img src="/public/ost.svg" alt="" class="w-10">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+      <img src="/public/ost.svg" alt="" class="w-10">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+    </div>
+  </div>
 
-<div class=" flex items-center justify-between border border-base-200 relative">
-<p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
-  <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
-  <div class="w-[2px] h-[50px] bg-base-200 "></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
-</div>
+  <div id="text-slider-left-2" class="flex whitespace-nowrap animate-slide-left">
+    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <img src="/public/drink.svg" alt="" class="w-10">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <img src="/public/drink.svg" alt="" class="w-10">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+    </div>
+  </div>
 
-<div class=" flex items-center justify-between border border-base-200 relative">
-<p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
-  <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
-  <div class="w-[2px] h-[50px] bg-base-200 "></div>
-</div>
-
-<div class=" flex items-center justify-between border border-base-200 relative">
-<p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag </p>
-  <div class="w-[2px] h-[50px] bg-base-200"></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Destillery</p>
-  <div class="w-[2px] h-[50px] bg-base-200 "></div>
-  <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+  <div id="text-slider-right-2" class="flex whitespace-nowrap animate-slide-right">
+    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+    </div>
+  </div>
 </div>
 
 <a href="/prisliste" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10">
@@ -173,3 +222,23 @@ function animate() {
 animate();
 
 </script>
+
+<style>
+@keyframes slide-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-slide-left {
+  animation: slide-left 30s linear infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 30s linear infinite;
+}
+</style>
