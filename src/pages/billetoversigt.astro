@@ -6,7 +6,6 @@ import Header from "../components/Header.astro";
 import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 import Billetcard from "../components/Billetcard.astro";
 import Primarybutton from "../components/Primarybutton.astro";
-import Sekundaerknap from "../components/Sekundaerknap.astro";
 ---
 
 <MainLayout title="Titel">
@@ -18,20 +17,20 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
     <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mb-7">Priser i indgangen</p>
   </article>
 
-  <article class="p-[30px] sm:p-30">
+  <article class="p-[16px] sm:p-16">
     <div class="flex flex-row items-center justify-center gap-8 w-full">
       <div class="flex flex-1"></div>
       <div class="flex flex-row items-center justify-center gap-8">
         <div class="relative inline-block">
-          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <img src="/billetcard.svg" alt="Main Image" class="w-48 sm:w-auto" />
           <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
               <figure class="relative">
-                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-1">
-                  <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
-                  <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-3 mt-1">
+                  <h2 class="card-title text-[10px] md:text-[30px]">Studerende</h2>
+                  <p class="text-center text-[10px] md:text-[40px]">130 kr.</p>
                   <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-2" style="position: static;" />
+                  <input type="number" min="1" max="10" value="1" class="w-12 md:w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-2" style="position: static;" />
                 </div>
                 <Primarybutton />
               </figure>
@@ -40,15 +39,15 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
         </div>
 
         <div class="relative inline-block">
-          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <img src="/billetcard.svg" alt="Main Image" class="w-48 sm:w-auto" />
           <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
               <figure class="relative">
-                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-                  <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
-                  <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
-                  <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
-                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-3 mt-4">
+                  <h2 class="card-title text-[10px] md:text-[30px]">Pensionister</h2>
+                  <p class="text-center text-[10px] md:text-[30px]">130 kr.</p>
+                  <p class="text-[6px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-12 md:w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
                 </div>
                 <Primarybutton />
               </figure>
@@ -57,15 +56,15 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
         </div>
 
         <div class="relative inline-block">
-          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <img src="/billetcard.svg" alt="Main Image" class="w-48 sm:w-auto" />
           <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
               <figure class="relative">
-                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-                  <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
-                  <p class="text-center text-[20px] md:text-[40px]">130 kr.</p>
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-3 mt-4">
+                  <h2 class="card-title text-[10px] md:text-[30px]">Studerende</h2>
+                  <p class="text-center text-[10px] md:text-[30px]">130 kr.</p>
                   <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                  <input type="number" min="1" max="10" value="1" class="w-12 md:w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
                 </div>
                 <Primarybutton />
               </figure>
@@ -85,15 +84,15 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
       <div class="flex flex-1"></div>
       <div class="flex flex-row items-center justify-center gap-8">
         <div class="relative inline-block">
-          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <img src="/billetcard.svg" alt="Main Image" class="w-48 sm:w-auto" />
           <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
               <figure class="relative">
-                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-                  <h2 class="card-title text-[15px] md:text-[30px]">Standard</h2>
-                  <p class="text-center text-[20px] md:text-[40px]">110 kr.</p>
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-3 mt-4">
+                  <h2 class="card-title text-[10px] md:text-[30px]">Standard</h2>
+                  <p class="text-center text-[10px] md:text-[40px]">110 kr.</p>
                   <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                  <input type="number" min="1" max="10" value="1" class="w-12 md:w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
                 </div>
                 <Primarybutton />
               </figure>
@@ -102,15 +101,15 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
         </div>
 
         <div class="relative inline-block">
-          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <img src="/billetcard.svg" alt="Main Image" class="w-48 sm:w-auto" />
           <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
               <figure class="relative">
-                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-                  <h2 class="card-title text-[15px] md:text-[30px]">Pensionister</h2>
-                  <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
-                  <p class="text-[10px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
-                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-3 mt-4">
+                  <h2 class="card-title text-[10px] md:text-[30px]">Pensionister</h2>
+                  <p class="text-center text-[10px] md:text-[40px]">80 kr.</p>
+                  <p class="text-[6px] md:text-[20px]">(65+ og førtidspensionister) + gebyr 12 kr.</p>
+                  <input type="number" min="1" max="10" value="1" class="w-12 md:w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
                 </div>
                 <Primarybutton />
               </figure>
@@ -119,15 +118,15 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
         </div>
 
         <div class="relative inline-block">
-          <img src="/billetcard.svg" alt="Main Image" class="" />
+          <img src="/billetcard.svg" alt="Main Image" class="w-48 sm:w-auto" />
           <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
             <div class="flex justify-center items-center w-15 mx-auto -mt-6 pointer-events-auto">
               <figure class="relative">
-                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-4 mt-4">
-                  <h2 class="card-title text-[15px] md:text-[30px]">Studerende</h2>
-                  <p class="text-center text-[20px] md:text-[40px]">80 kr.</p>
+                <div class="flex flex-col justify-center top-30 items-center bg-opacity-40 text-neutral p-3 mt-4">
+                  <h2 class="card-title text-[10px] md:text-[30px]">Studerende</h2>
+                  <p class="text-center text-[10px] md:text-[40px]">80 kr.</p>
                   <p class="text-[10px] md:text-[20px]">+ gebyr 12 kr.</p>
-                  <input type="number" min="1" max="10" value="1" class="w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
+                  <input type="number" min="1" max="10" value="1" class="w-12 md:w-20 text-center rounded border border-gray-300 py-1 px-2 text-black bg-white mx-auto my-4" style="position: static;" />
                 </div>
                 <Primarybutton />
               </figure>
@@ -157,3 +156,4 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
     </div>
   </article>
 </MainLayout>
+
