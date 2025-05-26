@@ -166,6 +166,89 @@ import Login from "../components/Login.astro";
   </article>
 </MainLayout>
 
+<!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
+<div class="overflow-hidden w-full relative mt-10">
+  <div id="text-slider-left" class="flex whitespace-nowrap animate-slide-left">
+    <div class="flex items-center justify-between min-w-full">
+      <div class="border border-base-200 rounded-md flex items-center">
+        <img src="/hotdog.svg" alt="" class="w-10" />
+        <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+        <div class="w-[2px] h-[50px] bg-base-200"></div>
+      </div>
+      <div class="border border-base-200 rounded-md flex items-center px-2">
+        <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+        <div class="w-[2px] h-[50px] bg-base-200"></div>
+      </div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between min-w-full">
+      <img src="/hotdog.svg" alt="" class="w-10" />
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+    </div>
+  </div>
+
+  <div id="text-slider-right" class="flex whitespace-nowrap animate-slide-right">
+    <div class="flex items-center justify-between min-w-full">
+      <img src="/ost.svg" alt="" class="w-10" />
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between min-w-full">
+      <img src="/ost.svg" alt="" class="w-10" />
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+    </div>
+  </div>
+
+  <div id="text-slider-left-2" class="flex whitespace-nowrap animate-slide-left">
+    <div class="flex items-center justify-between min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <img src="/drink.svg" alt="" class="w-10" />
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <img src="/drink.svg" alt="" class="w-10" />
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+    </div>
+  </div>
+
+  <div id="text-slider-right-2" class="flex whitespace-nowrap animate-slide-right">
+    <div class="flex items-center justify-between min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+    </div>
+    <!-- Clone for loop -->
+    <div class="flex items-center justify-between min-w-full">
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
+      <div class="w-[2px] h-[50px] bg-base-200"></div>
+      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+    </div>
+  </div>
+</div>
+
 <script>
   const slideshow = document.getElementById("slideshow");
   const slideWidth = slideshow.scrollWidth / 2; // Halvdelen er nok, da vi har dubleret billederne
