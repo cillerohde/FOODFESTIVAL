@@ -7,238 +7,207 @@ import thumbsup from "../assets/images/thumbsup.png";
 import Headerbanner from "../components/Headerbanner.astro";
 import Header from "../components/Header.astro";
 import Login from "../components/Login.astro";
-
-
 ---
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet" />
 
 <MainLayout title="Titel">
   <article>
-	  <Login />
+    <Login />
     <Headerbanner />
-<div class="border-b border-l border-r border-base-300 mx-20 p-20 relative mb-10 pt-[500px]">
+    <div class="border-b border-l border-r border-base-300 mx-20 p-20 relative mb-10 pt-[500px]">
+      <div class="flex items-center w-full">
+        <!-- Oval til højre -->
+        <img src="/sorteclipse.svg" alt="" class="absolute right-50 top-2" />
+        <!-- FOOD til venstre -->
+        <h1 class="absolute left-[-60px] top-20 text-base-200 text-[60px] md:text-[180px] font-normal oi-regular leading-none">FOOD</h1>
+      </div>
 
-<div class="flex items-center w-full">
+      <!-- FESTIVAL -->
+      <h1 class="text-base-200 absolute left-[-40px] top-60 text-[120px] md:text-[180px] oi-regular leading-none m-0 p-0">FESTIVAL</h1>
 
-    <!-- Oval til højre -->
-<img src="/sorteclipse.svg" alt="" class="absolute right-50 top-2">
-  <!-- FOOD til venstre -->
-    <h1 class="absolute left-[-60px] top-20 text-base-200 text-[60px] md:text-[180px] font-normal oi-regular leading-none">
-    FOOD
-  </h1>
+      <!-- ÅRHUS -->
+      <h2 class="text-base-300 absolute right-20 top-80 inria-serif-regular-italic text-right text-[40px] md:text-[170px] leading-none m-0 p-0">ÅRHUS</h2>
 
+      <div class="flex items-start space-x-6">
+        <div class="max-w-lg pl-4">
+          <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">Glæd dig til tre smagfulde dage fyldt med kulinariske oplevelser, inspiration og aktiviteter for hele familien.</p>
+          <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">Mød over 250 passionerede madhåndværkere og producenter, og lad dig forkæle af alt det bedste fra det nordiske køkken.</p>
+          <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">Så spis dig igennem 7 festivalområder, deltag i et hav af gratis workshops, gratis showcookninger og meget mere!</p>
+          <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">Vi ses til en uforglemmelig Food Festival på Tangkrogen i Aarhus!</p>
+        </div>
 
-</div>
+        <img src="/forsidehånd.webp" alt="" class="absolute left-150 bottom-[-30px] w-[70%] h-auto max-w-none" style="transform: scaleX(-1);" />
+      </div>
 
+      <div class="absolute -bottom-50 left-[62%] z-30" style="transform: translateX(-50%) rotate(-10deg);">
+        <img src="/billetcard.svg" alt="Billetter" class="w-[300px] h-auto mx-auto" />
 
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-neutral">
+          <div class="flex flex-col items-center space-y-2 md:space-y-4 text-center">
+            <h2 class="text-[14px] md:text-[24px] font-semibold">BILLETTER</h2>
+            <p class="text-[14px] md:text-[20px]">Partoutbillet: 170 kr.</p>
+            <p class="text-[14px] md:text-[20px]">Dagsbillet: 110 kr.</p>
+            <p class="text-[14px] md:text-[20px]">Studerende &<br />Pensionist rabat</p>
+            <p class="text-[14px] md:text-[20px]">Børn til og med 10 år <br /> er gratis.</p>
+            <a href="/billetoversigt">
+              <Button>KØB HER</Button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- FESTIVAL -->
-  <h1 class="text-base-200 absolute left-[-40px] top-60 text-[120px] md:text-[180px] oi-regular leading-none m-0 p-0">
-    FESTIVAL
-  </h1>
-
-  <!-- ÅRHUS -->
-  <h2 class="text-base-300 absolute right-20 top-80 inria-serif-regular-italic text-right text-[40px] md:text-[170px] leading-none m-0 p-0">
-    ÅRHUS
-  </h2>
-
-
-
-
-<div class="flex items-start space-x-6">
-  <div class="max-w-lg pl-4">
-    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
-      Glæd dig til tre smagfulde dage fyldt med kulinariske oplevelser, inspiration og aktiviteter for hele familien.
-    </p>
-    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
-      Mød over 250 passionerede madhåndværkere og producenter, og lad dig forkæle af alt det bedste fra det nordiske køkken.
-    </p>
-    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px] mb-2">
-      Så spis dig igennem 7 festivalområder, deltag i et hav af gratis workshops, gratis showcookninger og meget mere!
-    </p>
-    <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">
-      Vi ses til en uforglemmelig Food Festival på Tangkrogen i Aarhus!
-    </p>
-  </div>
-
-  <img src="/forsidehånd.webp" alt="" class=" absolute left-150 bottom-[-30px] w-[70%] h-auto max-w-none" style="transform: scaleX(-1);" /> 
-</div>
-
-
-<div class="absolute -bottom-50 left-[62%] z-30" style="transform: translateX(-50%) rotate(-10deg);">
-  <img src="/billetcard.svg" alt="Billetter" class="w-[300px] h-auto mx-auto" />
-  
-<div class="absolute inset-0 flex flex-col justify-center items-center text-neutral">
-  <div class="flex flex-col items-center space-y-2 md:space-y-4 text-center">
-    <h2 class="text-[14px] md:text-[24px] font-semibold">BILLETTER</h2>
-    <p class="text-[14px] md:text-[20px]">Partoutbillet: 170 kr.</p>
-    <p class="text-[14px] md:text-[20px]">Dagsbillet: 110 kr.</p>
-    <p class="text-[14px] md:text-[20px]">Studerende &<br>Pensionist rabat</p>
-    <p class="text-[14px] md:text-[20px]">Børn til og med 10 år <br> er gratis.</p>
-   <a href="/billetoversigt">
-  <Button>KØB HER</Button>
-</a>
-
-  </div>
-  
-</div>
-
-</div>
-</div>
-
-<div class="overflow-hidden w-full relative mt-20 group">
-  <div
-    id="slideshow"
-    class="flex transition-transform duration-[2000ms] ease-in-out"
-  >
-    <img src="/public/img1.webp" alt="" class="max-w-none" />
-    <img src="/public/img2.webp" alt="" class="max-w-none" />
-    <img src="/public/img3.webp" alt="" class="max-w-none" />
-    <img src="/public/img4.webp" alt="" class="max-w-none" />
-    <img src="/public/img5.webp" alt="" class="max-w-none" />
-    <img src="/public/img6.webp" alt="" class="max-w-none" />
-    <img src="/public/img7.webp" alt="" class="max-w-none" />
-    <!-- Clone of first slide -->
-    <img src="/public/img8.webp" alt="" class="max-w-none" />
-    <img src="/public/img9.webp" alt="" class="max-w-none" />
+    <div class="overflow-hidden w-full relative mt-20 group">
+      <div id="slideshow" class="flex transition-transform duration-[2000ms] ease-in-out">
+        <img src="/public/img1.webp" alt="" class="max-w-none" />
+        <img src="/public/img2.webp" alt="" class="max-w-none" />
+        <img src="/public/img3.webp" alt="" class="max-w-none" />
+        <img src="/public/img4.webp" alt="" class="max-w-none" />
+        <img src="/public/img5.webp" alt="" class="max-w-none" />
+        <img src="/public/img6.webp" alt="" class="max-w-none" />
+        <img src="/public/img7.webp" alt="" class="max-w-none" />
+        <!-- Clone of first slide -->
+        <img src="/public/img8.webp" alt="" class="max-w-none" />
+        <img src="/public/img9.webp" alt="" class="max-w-none" />
         <img src="/public/img10.webp" alt="" class="max-w-none" />
-    <img src="/public/img11.webp" alt="" class="max-w-none" />
-
-  </div>
-</div>
-
-
-<div>
-  <h6 class="bg-[#0B5BF8]/5 text-base-300 text-center brygada-1918-400 text-[24px] md:text-[32px] font-bold p-50 ">
-    Billetterne er billigere online <br>
-    - Køb & spar!
-  </h6>
-</div>
-<!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
-<div class="overflow-hidden w-full relative mt-10">
-  <div id="text-slider-left" class="flex whitespace-nowrap animate-slide-left">
-    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
-      <img src="/public/hotdog.svg" alt="" class="w-10">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+        <img src="/public/img11.webp" alt="" class="max-w-none" />
+      </div>
     </div>
-    <!-- Clone for loop -->
-    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
-      <img src="/public/hotdog.svg" alt="" class="w-10">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
-    </div>
-  </div>
 
-  <div id="text-slider-right" class="flex whitespace-nowrap animate-slide-right">
-    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
-      <img src="/public/ost.svg" alt="" class="w-10">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+    <div>
+      <h6 class="bg-[#0B5BF8]/5 text-base-300 text-center brygada-1918-400 text-[24px] md:text-[32px] font-bold p-50">
+        Billetterne er billigere online <br />
+        - Køb & spar!
+      </h6>
     </div>
-    <!-- Clone for loop -->
-    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
-      <img src="/public/ost.svg" alt="" class="w-10">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
-    </div>
-  </div>
+    <!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
+    <div class="overflow-hidden w-full relative mt-10">
+      <div id="text-slider-left" class="flex whitespace-nowrap animate-slide-left">
+        <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+          <img src="/public/hotdog.svg" alt="" class="w-10" />
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+        </div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+          <img src="/public/hotdog.svg" alt="" class="w-10" />
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Mad og kaffe med Emma Martiny</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Hvor sidder smagen i bøffen?</p>
+        </div>
+      </div>
 
-  <div id="text-slider-left-2" class="flex whitespace-nowrap animate-slide-left">
-    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <img src="/public/drink.svg" alt="" class="w-10">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-    </div>
-    <!-- Clone for loop -->
-    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <img src="/public/drink.svg" alt="" class="w-10">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-    </div>
-  </div>
+      <div id="text-slider-right" class="flex whitespace-nowrap animate-slide-right">
+        <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+          <img src="/public/ost.svg" alt="" class="w-10" />
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+        </div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+          <img src="/public/ost.svg" alt="" class="w-10" />
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Unika ostesmagning</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Lær at lave yoghurtbark med Frederik Haun</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Weber Grill Hands On-grillkurser</p>
+        </div>
+      </div>
 
-  <div id="text-slider-right-2" class="flex whitespace-nowrap animate-slide-right">
-    <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+      <div id="text-slider-left-2" class="flex whitespace-nowrap animate-slide-left">
+        <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <img src="/public/drink.svg" alt="" class="w-10" />
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+        </div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <img src="/public/drink.svg" alt="" class="w-10" />
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+        </div>
+      </div>
+
+      <div id="text-slider-right-2" class="flex whitespace-nowrap animate-slide-right">
+        <div class="flex items-center justify-between border border-base-200 border-b-0 min-w-full">
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+        </div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
+          <div class="w-[2px] h-[50px] bg-base-200"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
+        </div>
+      </div>
     </div>
-    <!-- Clone for loop -->
-    <div class="flex items-center justify-between border border-base-200 border-t-0 min-w-full">
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">DM i Grill Lørdag & Søndag</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Copenhagen Distillery</p>
-      <div class="w-[2px] h-[50px] bg-base-200"></div>
-      <p class="noto-sans-sora-sompeng-400 text-[16px] md:text-[20px] font-medium">Fiskeauktion på Havet</p>
-    </div>
-  </div>
-</div>
 
-<a href="/prisliste" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10">
-  SE HELE PROGRAMMET HER
-</a>
-
-</article>
-
-  
+    <a href="/event" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10"> SE HELE PROGRAMMET HER </a>
+  </article>
 </MainLayout>
 
 <script>
-const slideshow = document.getElementById("slideshow");
-const slideWidth = slideshow.scrollWidth / 2; // Halvdelen er nok, da vi har dubleret billederne
-let currentX = 0;
+  const slideshow = document.getElementById("slideshow");
+  const slideWidth = slideshow.scrollWidth / 2; // Halvdelen er nok, da vi har dubleret billederne
+  let currentX = 0;
 
-function animate() {
-  currentX -= 200; // lavere = langsommere
-  if (Math.abs(currentX) >= slideWidth) {
-    // Her justerer vi uden hak
-    currentX += slideWidth;
+  function animate() {
+    currentX -= 200; // lavere = langsommere
+    if (Math.abs(currentX) >= slideWidth) {
+      // Her justerer vi uden hak
+      currentX += slideWidth;
+    }
+    slideshow.style.transform = `translateX(${currentX}px)`;
+    requestAnimationFrame(animate);
   }
-  slideshow.style.transform = `translateX(${currentX}px)`;
-  requestAnimationFrame(animate);
-}
 
-animate();
-
+  animate();
 </script>
 
 <style>
-@keyframes slide-left {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
-}
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 
-@keyframes slide-right {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(100%); }
-}
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 
-.animate-slide-left {
-  animation: slide-left 30s linear infinite;
-}
+  .animate-slide-left {
+    animation: slide-left 30s linear infinite;
+  }
 
-.animate-slide-right {
-  animation: slide-right 30s linear infinite;
-}
+  .animate-slide-right {
+    animation: slide-right 30s linear infinite;
+  }
 </style>
