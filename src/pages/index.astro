@@ -17,19 +17,28 @@ import Login from "../components/Login.astro";
   <article>
     <Login />
     <Headerbanner />
-    <div class="border-b border-l border-r border-base-300 mx-7 p-20 relative mb-10 pt-[500px]">
+    <div class="border-b border-l border-r border-base-300 mx-12 md:mx-32 p-20 relative mb-10 pt-[500px]">
       <div class="flex items-center w-full">
-        <!-- Oval til højre -->
-        <img src="/sorteclipse.svg" alt="" class="absolute right-4 md:right-50 top-2 w-48 md:w-100" />
-        <!-- FOOD til venstre -->
-        <h1 class="absolute left-[-20px] md:left-[-60px] top-20 text-base-200 text-[45px] md:text-[180px] font-normal oi-regular leading-none">FOOD</h1>
+      <!-- Oval til højre -->
+      <img src="/sorteclipse.svg" alt="" class="absolute right-4 md:right-50 top-2 w-48 md:w-100" />
+      <!-- FOOD til venstre -->
+      <h1 class="absolute left-[-20px] md:left-[-60px] top-20 text-base-200 text-[45px] md:text-[160px] font-normal oi-regular leading-none">FOOD</h1>
       </div>
 
       <!-- FESTIVAL -->
-      <h1 class="text-base-200 absolute top-52 md:top-65 text-[45px] md:text-[180px] oi-regular leading-none m-0 p-0 left-1/2 -translate-x-1/2 md:left-[unset] md:translate-x-0 md:left-[-40px]">FESTIVAL</h1>
+      <h1 
+        class="text-base-200 absolute 
+        top-32 md:top-65 
+        text-[45px] md:text-[160px] 
+        oi-regular leading-none m-0 p-0 
+        left-1/2 -translate-x-1/2 
+        md:left-[unset] md:translate-x-0 md:left-[-40px]"
+      >
+        FESTIVAL
+      </h1>
 
       <!-- ÅRHUS -->
-      <h2 class="text-base-300 absolute right-20 top-80 inria-serif-regular-italic text-right text-[40px] md:text-[170px] leading-none m-0 p-0">ÅRHUS</h2>
+      <h2 class="text-base-300 absolute right-20 top-35 md:top-80 inria-serif-regular-italic text-right text-[40px] md:text-[170px] leading-none m-0 p-0">ÅRHUS</h2>
 
       <div class="flex items-start space-x-6">
         <div class="max-w-lg pl-0 md:pl-4">
@@ -39,7 +48,7 @@ import Login from "../components/Login.astro";
           <p class="noto-sans-sora-sompeng-400 text-[12px] md:text-[20px]">Vi ses til en uforglemmelig Food Festival på Tangkrogen i Aarhus!</p>
         </div>
 
-        <img src="/forsidehånd.webp" alt="" class="absolute left-150 bottom-[-30px] w-[70%] h-auto max-w-none" style="transform: scaleX(-1);" />
+        <img src="/forsidehånd.webp" alt="" class="absolute left-43 md:left-150 bottom-140 md:bottom-[-30px] w-[60%] h-auto max-w-none" style="transform: scaleX(-1);" />
       </div>
 
       <div class="absolute -bottom-50 left-[62%] z-30" style="transform: translateX(-50%) rotate(-10deg);">
