@@ -14,19 +14,35 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 <div class="px-8">
 <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
 <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
-</div>
-
-    <div class="grid grid-cols-3 gap-8 my-8 px-8 py-8">
-    <div class="bg-[#0B5BF8]/5 p-8  flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
-        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">FREDAG</h1>
+<div class="grid grid-cols-3 gap-8 my-8 px-8 py-8">
+    <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
+            <span class="block group-hover:hidden">FREDAG</span>
+            <span class="hidden group-hover:block text-center text-base-100">
+                FREDAG<br>
+                <span class="text-sm">Her er aktiviteterne fredag d. 23</span>
+              </span>      </h1>
     </div>
-    <div class="bg-[#0B5BF8]/5 p-8  flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
-        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">LØRDAG</h1>
+  
+    <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
+      <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
+        <span class="block group-hover:hidden">LØRDAG</span>
+        <span class="hidden group-hover:block text-center text-base-100">
+            LØRDAG<br>
+            <span class="text-sm">Her er aktiviteterne lørdag d. 24</span>
+          </span>      </h1>
     </div>
-    <div class="bg-[#0B5BF8]/5 p-8  flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
-        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">SØNDAG</h1>
-    </div>
-</div>
+  
+    <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
+          <span class="block group-hover:hidden">SØNDAG</span>
+          <span class="hidden group-hover:block text-center text-base-100">
+              SØNDAG<br>
+              <span class="text-sm">Her er aktiviteterne søndag d. 25</span>
+            </span>      </h1>
+      </div>
+  </div>
+  
 
 
 <div class="px-8 my-8 py-8 bg-[#0B5BF8]/5">
@@ -37,7 +53,7 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 <div class="flex flex-row justify-center gap-8 my-8 px-8 py-8">
    
     <div class="bg-white p-8  flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
-        <img src="https://via.placeholder.com/100" alt="Card 1 Image" class="mb-4 rounded" />
+        <img src="/eventbillede1.svg" alt="Card 1 Image" class="mb-4 rounded" />
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">DM I HOTDOG</h1>
         <p>
             <ul>
@@ -49,7 +65,7 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 
     </div>
     <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
-        <img src="https://via.placeholder.com/100" alt="Card 2 Image" class="mb-4 rounded" />
+        <img src="/eventbillede2.svg" alt="Card 2 Image" class="mb-4 rounded" />
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">DM I GRILL</h1>
         <p>
             <ul>
@@ -60,7 +76,7 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
         </p>
     </div>
     <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
-        <img src="https://via.placeholder.com/100" alt="Card 3 Image" class="mb-4 rounded" />
+        <img src="/eventbillede3.svg" alt="Card 3 Image" class="mb-4 rounded" />
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">ÅRETS COKTAIL</h1>
         <p>
             <ul>
@@ -74,11 +90,15 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 </div>
 
 <div class="flex flex-row justify-center gap-20 my-8 px-8 py-8">
+    <div class="flex flex-col items-center gap-10">
 <h1 class="text-5xl brygada-1918-400 font-bold">200 Stande</h1>
-<img src="" alt="">
+<img src="/illustrationstande.svg" alt="">
+</div>
 
+<div class="flex flex-col items-center gap-10">
 <h1 class="text-5xl brygada-1918-400 font-bold">7 Festivalsområder</h1>
-<img src="" alt="">
+<img src="/illustrationtelt.svg" alt="">
+</div>
 </div>
 
 <div>
