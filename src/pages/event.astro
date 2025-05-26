@@ -3,33 +3,89 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Index from "./index.astro"
 import Headerbanner from "../components/Headerbanner.astro";
 import Header from "../components/Header.astro";
+import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 ---
-<Headerbanner /> 
-<Header />
 
-<div class="grid grid-cols-3 gap-8 my-8">
-    <div class="bg-gray-100 p-8 rounded-xl flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
-        <h1>Card 1</h1>
+
+<MainLayout>
+<Headerbanner />
+<Herosectiontypografi />
+
+<div class="px-8">
+<h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
+<p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+</div>
+
+    <div class="grid grid-cols-3 gap-8 my-8 px-8 py-8">
+    <div class="bg-[#0B5BF8]/5 p-8  flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">FREDAG</h1>
     </div>
-    <div class="bg-gray-100 p-8 rounded-xl flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
-        <h1>Card 2</h1>
+    <div class="bg-[#0B5BF8]/5 p-8  flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">LØRDAG</h1>
     </div>
-    <div class="bg-gray-100 p-8 rounded-xl flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
-        <h1>Card 3</h1>
+    <div class="bg-[#0B5BF8]/5 p-8  flex items-center justify-center min-h-[150px] shadow-md border border-base-300">
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">SØNDAG</h1>
     </div>
 </div>
 
-<div class="flex flex-row gap-8 my-8">
-    <div class="bg-white p-8 rounded-xl flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
+
+<div class="px-8 my-8 py-8 bg-[#0B5BF8]/5">
+    <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Events </h1>
+    <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+    
+
+<div class="flex flex-row justify-center gap-8 my-8 px-8 py-8">
+   
+    <div class="bg-white p-8  flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
         <img src="https://via.placeholder.com/100" alt="Card 1 Image" class="mb-4 rounded" />
-        <p>This is the description for Card 1.</p>
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">DM I HOTDOG</h1>
+        <p>
+            <ul>
+            <li><strong>Søndag:</strong> 12.00 – 16.00<br>
+                <strong> Iværksætteriet</strong> 
+            </li>
+          </ul>
+        </p>
+
     </div>
-    <div class="bg-white p-8 rounded-xl flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
+    <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
         <img src="https://via.placeholder.com/100" alt="Card 2 Image" class="mb-4 rounded" />
-        <p>This is the description for Card 2.</p>
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">DM I GRILL</h1>
+        <p>
+            <ul>
+                <li><strong>Lørdag:</strong> 10.00  – 19.00<br>
+                    <strong>Søndag:</strong> 10.00 – 17.00<br>
+                </li>
+              </ul>
+        </p>
     </div>
-    <div class="bg-white p-8 rounded-xl flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
+    <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
         <img src="https://via.placeholder.com/100" alt="Card 3 Image" class="mb-4 rounded" />
-        <p>This is the description for Card 3.</p>
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">ÅRETS COKTAIL</h1>
+        <p>
+            <ul>
+                <li><strong>Lørdag:</strong> 18.00 – 20.00<br>
+                    <strong> Gildesalen</strong>
+                </li>
+              </ul>
+        </p>
     </div>
+</div>
+</div>
+
+<div class="flex flex-row justify-center gap-20 my-8 px-8 py-8">
+<h1 class="text-5xl brygada-1918-400 font-bold">200 Stande</h1>
+<img src="" alt="">
+
+<h1 class="text-5xl brygada-1918-400 font-bold">7 Festivalsområder</h1>
+<img src="" alt="">
+</div>
+
+<div>
+    <a href="https://www.foodfestival.dk/oplevelser-2025/madoplevelser-i-stande/"
+    class="text-base-300 underline block text-center text-[24px] md:text-[40px] mb-[50px] mt-10">
+   SE KORTET HER
+ </a>
+ 
+
 </div>
