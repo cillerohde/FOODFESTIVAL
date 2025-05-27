@@ -433,3 +433,12 @@
     opacity: 1;
   }
 }
+
+@keyframes sway {
+  0% { transform: translateX(-50%) rotate(-8deg); }
+  50% { transform: translateX(-50%) rotate(8deg); }
+  100% { transform: translateX(-50%) rotate(-8deg); }
+}
+.animate-sway {
+  animation: sway 2.5s ease-in-out infinite;
+}

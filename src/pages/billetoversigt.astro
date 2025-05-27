@@ -11,7 +11,7 @@ import Primarybutton from "../components/Primarybutton.astro";
 <MainLayout title="Titel">
   <Headerbanner />
   <Herosectiontypografi />
-  <article class="m-[30px] sm:m-30 flex flex-col justify-center">
+  <article class="p-[16px] sm:p-16 m-[30px] sm:m-30 flex flex-col justify-center">
     <h5 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Partout</h5>
     <p class="noto-sans-sora-sompeng-400 mt-7 mb-7">Giver adgang til Food Festival alle dage 5-7-september 2025 Børn til og med 10 år er gratis</p>
     <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mb-7">Priser i indgangen</p>
@@ -75,7 +75,7 @@ import Primarybutton from "../components/Primarybutton.astro";
       <div class="flex flex-1"></div>
     </div>
 
-    <h5 class="brygada-1918-400 text-[20px] md:text-[50px] mt-10 mb-7 sm:mt-15">Dagsbillet</h5>
+    <h5 class="brygada-1918-400 text-[20px] md:text-[50px] m-[30px] sm:m-30 mt-10 mb-7 sm:mt-15">Dagsbillet</h5>
     <div class="flex justify-end mb-7">
       <p class="max-w-60 text-right text-[12px] md:text-[16px] rotate-6 inline-block">*Enkelte events kræver tilmelding eller ekstra betaling, hvilket vil fremgå tydeligt i programmet.</p>
     </div>
@@ -139,7 +139,7 @@ import Primarybutton from "../components/Primarybutton.astro";
   </article>
 
   <article class="p-[30px] sm:p-60">
-    <div class="flex flex-col md:flex-row items-center gap-8 mt-8">
+    <div class="flex flex-col md:flex-row items-center gap-8 mt-8 m-[30px]">
       <div class="flex-1">
         <p class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mb-7">Priser i indgangen</p>
         <p class="noto-sans-sora-sompeng-400 mt-7 mb-7">Billetter er dyrere i indgangen køb online og spar! Priser i indgangen: Partout: 205 kr. · Stud./Pensionist: 160 kr. Dagsbillet: 140 kr. · Stud./Pensionist: 110 kr. Du kan ombytte din dagsbillet til weekendbillet for kun 75 kr. i Informationen på Tangkrogen.</p>
@@ -150,10 +150,9 @@ import Primarybutton from "../components/Primarybutton.astro";
         <div class="relative w-full flex justify-center mb-30">
           <img src="/burgerbillede.svg" alt="billede" />
           <img src="/manddervinker.svg" alt="billede" class="absolute -top-10 left-1/4 -translate-x-1/2" />
-          <img src="/mandderhænger.svg" alt="billede" class="absolute top-120 left-3/4 -translate-x-1/2" />
+          <img src="/mandderhænger.svg" alt="billede" class="absolute top-[95%] left-1/2 -translate-x-1/2 animate-sway md:top-[500px] md:left-4/5 md:-translate-x-1/2" style="transform-origin: top center;" />
         </div>
       </div>
     </div>
   </article>
 </MainLayout>
-
