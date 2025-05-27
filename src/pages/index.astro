@@ -47,197 +47,186 @@ import Login from "../components/Login.astro";
         <img src="/forsidehånd.webp" alt="" class="hidden md:block absolute left-43 md:left-150 bottom-140 md:bottom-[-30px] w-[60%] h-auto max-w-none" style="transform: scaleX(-1);" />
       </div>
 
-      <div
-        class="absolute left-1/2 md:left-[62%] z-30 -bottom-32 md:-bottom-50"
-        style="transform: translateX(-50%) rotate(-10deg);"
-      >
+      <div class="absolute left-1/2 md:left-[62%] z-30 -bottom-32 md:-bottom-50" style="transform: translateX(-50%) rotate(-10deg);">
         <div class="relative w-[220px] md:w-[260px] h-auto mx-auto">
           <img src="/billetcard.svg" alt="Billetter" class="w-full h-auto mx-auto" />
           <div class="absolute inset-0 flex flex-col justify-center items-center text-neutral px-2 py-4">
-        <div class="flex flex-col items-center space-y-1 md:space-y-2 text-center w-full">
-          <h2 class="text-[11px] md:text-[16px] font-semibold leading-tight">BILLETTER</h2>
-          <p class="text-[10px] md:text-[13px] leading-tight">Partoutbillet: 170 kr.</p>
-          <p class="text-[10px] md:text-[13px] leading-tight">Dagsbillet: 110 kr.</p>
-          <p class="text-[10px] md:text-[13px] leading-tight">Studerende &<br />Pensionist rabat</p>
-          <p class="text-[10px] md:text-[13px] leading-tight">Børn til og med 10 år <br /> er gratis.</p>
-          <a href="/billetoversigt" class="mt-1 md:mt-2">
-            <Button>KØB HER</Button>
-          </a>
-        </div>
+            <div class="flex flex-col items-center space-y-1 md:space-y-2 text-center w-full">
+              <h2 class="text-[11px] md:text-[16px] font-semibold leading-tight">BILLETTER</h2>
+              <p class="text-[10px] md:text-[13px] leading-tight">Partoutbillet: 170 kr.</p>
+              <p class="text-[10px] md:text-[13px] leading-tight">Dagsbillet: 110 kr.</p>
+              <p class="text-[10px] md:text-[13px] leading-tight">Studerende &<br />Pensionist rabat</p>
+              <p class="text-[10px] md:text-[13px] leading-tight">Børn til og med 10 år <br /> er gratis.</p>
+              <a href="/billetoversigt" class="mt-1 md:mt-2">
+                <Button>KØB HER</Button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      </div>
     </div>
+  </article>
 
-    <div class="overflow-hidden w-full relative mt-20 group sm:mt-50">
-      <div id="slideshow" class="flex transition-transform duration-[2000ms] ease-in-out">
-        <img src="/public/img1.webp" alt="" class="max-w-none" />
-        <img src="/public/img2.webp" alt="" class="max-w-none" />
-        <img src="/public/img3.webp" alt="" class="max-w-none" />
-        <img src="/public/img4.webp" alt="" class="max-w-none" />
-        <img src="/public/img5.webp" alt="" class="max-w-none" />
-        <img src="/public/img6.webp" alt="" class="max-w-none" />
-        <img src="/public/img7.webp" alt="" class="max-w-none" />
-        <!-- Clone of first slide -->
-        <img src="/public/img8.webp" alt="" class="max-w-none" />
-        <img src="/public/img9.webp" alt="" class="max-w-none" />
-        <img src="/public/img10.webp" alt="" class="max-w-none" />
-        <img src="/public/img11.webp" alt="" class="max-w-none" />
-      </div>
+  <div class="overflow-hidden w-full relative mt-20 group sm:mt-50">
+    <div id="slideshow" class="flex transition-transform duration-[2000ms] ease-in-out">
+      <img src="/public/img1.webp" alt="" class="max-w-none" />
+      <img src="/public/img2.webp" alt="" class="max-w-none" />
+      <img src="/public/img3.webp" alt="" class="max-w-none" />
+      <img src="/public/img4.webp" alt="" class="max-w-none" />
+      <img src="/public/img5.webp" alt="" class="max-w-none" />
+      <img src="/public/img6.webp" alt="" class="max-w-none" />
+      <img src="/public/img7.webp" alt="" class="max-w-none" />
+      <!-- Clone of first slide -->
+      <img src="/public/img8.webp" alt="" class="max-w-none" />
+      <img src="/public/img9.webp" alt="" class="max-w-none" />
+      <img src="/public/img10.webp" alt="" class="max-w-none" />
+      <img src="/public/img11.webp" alt="" class="max-w-none" />
     </div>
+  </div>
 
+  <div class="">
     <a href="/billetoversigt">
-      <h6 class="bg-[#0B5BF8]/5 text-base-300 text-center brygada-1918-400 text-[24px] md:text-[32px] font-bold p-0 md:p-50">
+      <h6 class="bg-[#0B5BF8]/5 text-base-300 text-center brygada-1918-400 text-[24px] md:text-[32px] font-bold p-0 md:p-50 hover:text-info transition-colors duration-200">
         Billetterne er billigere online <br />
         - Køb & spar!
       </h6>
     </a>
-    <!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
-    <div class="overflow-hidden w-full relative mt-10">
-      <a href="/event">
-        <div id="text-slider-left" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
-          <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
-            <div class="flex items-center m-0 p-0 min-w-0">
-              <img src="/hotdog.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
-              <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
-              <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            </div>
-            <div class="flex items-center px-2 m-0 p-0 min-w-0">
-              <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Mad og kaffe med Emma Martiny</p>
-              <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            </div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hvor sidder smagen i bøffen?</p>
-          </div>
-          <!-- Clone for loop -->
-          <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+  </div>
+
+  <!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
+  <div class="overflow-hidden w-full relative mt-10">
+    <a href="/event">
+      <div id="text-slider-left" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
+        <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+          <div class="flex items-center m-0 p-0 min-w-0">
             <img src="/hotdog.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
             <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
             <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          </div>
+          <div class="flex items-center px-2 m-0 p-0 min-w-0">
             <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Mad og kaffe med Emma Martiny</p>
             <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hvor sidder smagen i bøffen?</p>
           </div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hvor sidder smagen i bøffen?</p>
         </div>
-      </a>
-    </div>
-    <div class="overflow-hidden w-full relative">
-      <a href="/event">
-        <div id="text-slider-right" class="flex whitespace-nowrap cursor-pointer overflow-hidden" style="will-change: transform;">
-          <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
-            <img src="/ost.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[100px] md:max-w-none">Unika ostesmagning</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <div class="border-base-200 rounded-md px-2 py-1 flex items-center min-w-0">
-              <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Lær at lave yoghurtbark med Frederik Haun</p>
-            </div>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
-          </div>
-          <!-- Clone for loop -->
-          <div class="flex items-center justify-between min-w-full gap-0 flex-wrap md:flex-nowrap">
-            <img src="/ost.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[100px] md:max-w-none">Unika ostesmagning</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+          <img src="/hotdog.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Mad og kaffe med Emma Martiny</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Hvor sidder smagen i bøffen?</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="overflow-hidden w-full relative">
+    <a href="/event">
+      <div id="text-slider-right" class="flex whitespace-nowrap cursor-pointer overflow-hidden" style="will-change: transform;">
+        <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+          <img src="/ost.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[100px] md:max-w-none">Unika ostesmagning</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <div class="border-base-200 rounded-md px-2 py-1 flex items-center min-w-0">
             <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Lær at lave yoghurtbark med Frederik Haun</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
           </div>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
         </div>
-      </a>
-    </div>
-    <div class="overflow-hidden w-full relative">
-      <a href="/event">
-        <div id="text-slider-left-2" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
-          <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <div class="flex items-center border-base-200 rounded-md px-2 py-1 m-0 p-0 min-w-0">
-              <img src="/drink.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
-              <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 ml-2 truncate max-w-[120px] md:max-w-none">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
-            </div>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-          </div>
-          <!-- Clone for loop -->
-          <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between min-w-full gap-0 flex-wrap md:flex-nowrap">
+          <img src="/ost.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[100px] md:max-w-none">Unika ostesmagning</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Lær at lave yoghurtbark med Frederik Haun</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="overflow-hidden w-full relative">
+    <a href="/event">
+      <div id="text-slider-left-2" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
+        <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <div class="flex items-center border-base-200 rounded-md px-2 py-1 m-0 p-0 min-w-0">
             <img src="/drink.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 ml-2 truncate max-w-[120px] md:max-w-none">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
           </div>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
         </div>
-      </a>
-    </div>
-
-    <div class="overflow-hidden w-full relative">
-      <!-- Right slider -->
-      <a href="/event">
-        <div id="text-slider-right-2" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
-          <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">DM i Grill Lørdag & Søndag</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Copenhagen Distillery</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Fiskeauktion på Havet</p>
-          </div>
-          <!-- Clone for loop -->
-          <div class="flex items-center justify-between min-w-full gap-0 flex-wrap md:flex-nowrap">
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">DM i Grill Lørdag & Søndag</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Copenhagen Distillery</p>
-            <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
-            <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Fiskeauktion på Havet</p>
-          </div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <img src="/drink.svg" alt="" class="w-8 md:w-10 m-0 p-0 flex-shrink-0" />
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
+  </div>
 
+  <div class="overflow-hidden w-full relative">
+    <!-- Right slider -->
+    <a href="/event">
+      <div id="text-slider-right-2" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
+        <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 rounded-md p-2 flex-wrap md:flex-nowrap">
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">DM i Grill Lørdag & Søndag</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Copenhagen Distillery</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Fiskeauktion på Havet</p>
+        </div>
+        <!-- Clone for loop -->
+        <div class="flex items-center justify-between min-w-full gap-0 flex-wrap md:flex-nowrap">
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">DM i Grill Lørdag & Søndag</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Copenhagen Distillery</p>
+          <div class="w-[2px] h-[30px] md:h-[50px] bg-base-200 m-0 p-0"></div>
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium m-0 p-0 truncate max-w-[120px] md:max-w-none">Fiskeauktion på Havet</p>
+        </div>
+      </div>
+    </a>
+  </div>
 
+  <script>
+    // Helper to animate a slider left or right, but stop at boundaries
+    function animateSlider(sliderId, direction = "left", speed = 0.2) {
+      const slider = document.getElementById(sliderId);
+      if (!slider) return;
+      let currentX = 0;
+      const maxScroll = slider.scrollWidth / 2;
 
-
-
-
-
-    
-
-    <script>
-      // Helper to animate a slider left or right, but stop at boundaries
-      function animateSlider(sliderId, direction = "left", speed = 0.2) {
-        const slider = document.getElementById(sliderId);
-        if (!slider) return;
-        let currentX = 0;
-        const maxScroll = slider.scrollWidth / 2;
-
-        function step() {
-          if (direction === "left") {
-            currentX -= speed;
-            if (Math.abs(currentX) >= maxScroll) {
-              currentX = 0;
-            }
-          } else {
-            currentX += speed;
-            if (currentX >= maxScroll) {
-              currentX = 0;
-            }
+      function step() {
+        if (direction === "left") {
+          currentX -= speed;
+          if (Math.abs(currentX) >= maxScroll) {
+            currentX = 0;
           }
-          slider.style.transform = `translateX(${currentX}px)`;
-          requestAnimationFrame(step);
+        } else {
+          currentX += speed;
+          if (currentX >= maxScroll) {
+            currentX = 0;
+          }
         }
-        step();
+        slider.style.transform = `translateX(${currentX}px)`;
+        requestAnimationFrame(step);
       }
+      step();
+    }
 
-      // Animate each slider
-      animateSlider("text-slider-left", "left", 1);
-      animateSlider("text-slider-left-2", "left", 1);
-      animateSlider("text-slider-right", "right", 1);
-      animateSlider("text-slider-right-2", "right", 1);
-    </script>
+    // Animate each slider
+    animateSlider("text-slider-left", "left", 1);
+    animateSlider("text-slider-left-2", "left", 1);
+    animateSlider("text-slider-right", "right", 1);
+    animateSlider("text-slider-right-2", "right", 1);
+  </script>
 
-    <a href="/event" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10"> SE HELE PROGRAMMET HER </a>
-  </article>
-
-  
+  <a href="/event" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10 animate-bounce-up-down hover:text-info transition-colors duration-200"> SE HELE PROGRAMMET HER </a>
 </MainLayout>
 
 <script>
