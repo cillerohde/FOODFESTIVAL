@@ -1,111 +1,111 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro"; 
-import Index from "./index.astro"
+import MainLayout from "../layouts/MainLayout.astro";
+import Index from "./index.astro";
 import Headerbanner from "../components/Headerbanner.astro";
 import Header from "../components/Header.astro";
 import Herosectiontypografi from "../components/Herosectiontypografi.astro";
 ---
 
-
 <MainLayout>
-<Headerbanner />
-<Herosectiontypografi />
+  <Headerbanner />
+  <Herosectiontypografi />
 
-<div class="px-8">
-<h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
-<p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
-<div class="grid grid-cols-3 gap-8 my-8 px-8 py-8">
-    <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
+  <article class="p-[16px] sm:p-16">
+    <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
+    <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 px-8 py-8">
+      <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
-            <span class="block group-hover:hidden">FREDAG</span>
-            <span class="hidden group-hover:block text-center text-base-100">
-                FREDAG<br>
-                <span class="text-sm">Her er aktiviteterne fredag d. 23</span>
-              </span>      </h1>
-    </div>
-  
-    <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
-      <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
-        <span class="block group-hover:hidden">LØRDAG</span>
-        <span class="hidden group-hover:block text-center text-base-100">
-            LØRDAG<br>
+          <span class="block group-hover:hidden">FREDAG</span>
+          <span class="hidden group-hover:block text-center text-base-100">
+            FREDAG<br />
+            <span class="text-sm">Her er aktiviteterne fredag d. 23</span>
+          </span>
+        </h1>
+      </div>
+      <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
+        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
+          <span class="block group-hover:hidden">LØRDAG</span>
+          <span class="hidden group-hover:block text-center text-base-100">
+            LØRDAG<br />
             <span class="text-sm">Her er aktiviteterne lørdag d. 24</span>
-          </span>      </h1>
-    </div>
-  
-    <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
+          </span>
+        </h1>
+      </div>
+
+      <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
           <span class="block group-hover:hidden">SØNDAG</span>
           <span class="hidden group-hover:block text-center text-base-100">
-              SØNDAG<br>
-              <span class="text-sm">Her er aktiviteterne søndag d. 25</span>
-            </span>      </h1>
+            SØNDAG<br />
+            <span class="text-sm">Her er aktiviteterne søndag d. 25</span>
+          </span>
+        </h1>
       </div>
-  </div>
-  
-
-
-<div class="px-8 my-8 py-8 bg-[#0B5BF8]/5">
-    <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Events </h1>
-    <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
-    
-
-<div class="flex flex-row justify-center gap-8 my-8 px-8 py-8">
-   
-    <div class="bg-white p-8  flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
-        <img src="/eventbillede1.svg" alt="Card 1 Image" class="mb-4 rounded" />
-        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">DM I HOTDOG</h1>
-        <p>
-            <ul>
-            <li><strong>Søndag:</strong> 12.00 – 16.00<br>
-                <strong> Iværksætteriet</strong> 
-            </li>
-          </ul>
-        </p>
-
     </div>
-    <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
-        <img src="/eventbillede2.svg" alt="Card 2 Image" class="mb-4 rounded" />
-        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">DM I GRILL</h1>
-        <p>
+  </article>
+
+  <article class="p-[16px] sm:p-16">
+    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] px-8 my-8 py-8 bg-[#0B5BF8]/5">
+      <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Events</h1>
+      <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+
+      <div class="flex flex-col md:flex-row justify-center gap-8 my-8 px-8 py-8">
+        <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
+          <img src="/eventbillede1.svg" alt="Card 1 Image" class="mb-4 rounded" />
+          <h1 class="text-base-300 text-2xl md:text-4xl brygada-1918-400 font-bold">DM I HOTDOG</h1>
+          <p>
             <ul>
-                <li><strong>Lørdag:</strong> 10.00  – 19.00<br>
-                    <strong>Søndag:</strong> 10.00 – 17.00<br>
-                </li>
-              </ul>
-        </p>
-    </div>
-    <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
-        <img src="/eventbillede3.svg" alt="Card 3 Image" class="mb-4 rounded" />
-        <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold">ÅRETS COKTAIL</h1>
-        <p>
+              <li>
+                <strong>Søndag:</strong> 12.00 – 16.00<br />
+                <strong> Iværksætteriet</strong>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
+          <img src="/eventbillede2.svg" alt="Card 2 Image" class="mb-4 rounded" />
+          <h1 class="text-base-300 text-2xl md:text-4xl brygada-1918-400 font-bold">DM I GRILL</h1>
+          <p>
             <ul>
-                <li><strong>Lørdag:</strong> 18.00 – 20.00<br>
-                    <strong> Gildesalen</strong>
-                </li>
-              </ul>
-        </p>
+              <li>
+                <strong>Lørdag:</strong> 10.00 – 19.00<br />
+                <strong>Søndag:</strong> 10.00 – 17.00<br />
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
+          <img src="/eventbillede3.svg" alt="Card 3 Image" class="mb-4 rounded" />
+          <h1 class="text-base-300 text-2xl md:text-4xl brygada-1918-400 font-bold">ÅRETS COKTAIL</h1>
+          <p>
+            <ul>
+              <li>
+                <strong>Lørdag:</strong> 18.00 – 20.00<br />
+                <strong> Gildesalen</strong>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
     </div>
-</div>
-</div>
+  </article>
 
-<div class="flex flex-row justify-center gap-20 my-8 px-8 py-8">
-    <div class="flex flex-col items-center gap-10">
-<h1 class="text-5xl brygada-1918-400 font-bold">200 Stande</h1>
-<img src="/illustrationstande.svg" alt="">
-</div>
+  <article class="p-[16px] sm:p-16">
+    <div class="flex flex-row md:flex-row justify-center gap-4 md:gap-20 my-8 px-4 md:px-8 py-8">
+      <div class="flex flex-col items-center gap-4 md:gap-10">
+        <h1 class="text-2xl md:text-5xl brygada-1918-400 font-bold">200 Stande</h1>
+        <img src="/illustrationstande.svg" alt="" class="w-15 md:w-auto" />
+      </div>
 
-<div class="flex flex-col items-center gap-10">
-<h1 class="text-5xl brygada-1918-400 font-bold">7 Festivalsområder</h1>
-<img src="/illustrationtelt.svg" alt="">
-</div>
-</div>
+      <div class="flex flex-col items-center gap-4 md:gap-10">
+        <h1 class="text-2xl md:text-5xl brygada-1918-400 font-bold">7 Festivalsområder</h1>
+        <img src="/illustrationtelt.svg" alt="" class="w-24 md:w-auto" />
+      </div>
+    </div>
 
-<div>
-    <a href="https://www.foodfestival.dk/oplevelser-2025/madoplevelser-i-stande/"
-    class="text-base-300 underline block text-center text-[24px] md:text-[40px] mb-[50px] mt-10">
-   SE KORTET HER
- </a>
- 
-
-</div>
+    <div>
+      <a href="https://www.foodfestival.dk/oplevelser-2025/madoplevelser-i-stande/" class="text-base-300 underline block text-center text-[24px] md:text-[40px] mb-[50px] mt-10"> SE KORTET HER </a>
+    </div>
+  </article>
+</MainLayout>
