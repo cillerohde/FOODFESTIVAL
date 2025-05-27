@@ -11,8 +11,10 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
   <Herosectiontypografi />
 
   <article class="p-[16px] sm:p-16">
-    <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
-    <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+    <div class="ml-8">
+      <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
+      <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 px-8 py-8">
       <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
@@ -46,9 +48,11 @@ import Herosectiontypografi from "../components/Herosectiontypografi.astro";
   </article>
 
   <article class="p-[16px] sm:p-16">
-    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] px-8 my-8 py-8 bg-[#0B5BF8]/5">
-      <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Events</h1>
-      <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
+    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] p-[16px] sm:p-16 bg-[#0B5BF8]/5">
+      <div class="ml-8">
+        <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Events</h1>
+        <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Kom med til festen: Danmarks bedste madhåndværkere i landets lækreste kappestrid</p>
+      </div>
 
       <div class="flex flex-col md:flex-row justify-center gap-8 my-8 px-8 py-8">
         <div class="bg-white p-8 flex flex-col items-center justify-center min-h-[250px] shadow-md border border-base-300">
