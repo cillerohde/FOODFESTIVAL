@@ -171,7 +171,7 @@ import Primarybutton from "../components/Primarybutton.astro";
         <h7 class="brygada-1918-400 font-bold text-[20px] md:text-[30px] mt-7 mb-7">Vilkår for online køb af billetter</h7>
         <p class="noto-sans-sora-sompeng-400 mt-7 mb-7">Onlinesalg af billetter fortsætter til og med søndag den 7. september kl. 17.00. Muligheden for at købe en dagsbillet til forsalgspris online udløber kl. 00.00 dagen før. Hvis du eksempelvis skal købe en dagsbillet til søndag, skal du købe billetten lørdag inden kl. 23.59 for at få forsalgsprisen.</p>
       </div>
-      <div class="flex flex-col gap-4 flex-1 items-center hidden md:flex">
+      <div class="flex flex-col gap-4 flex-1 items-center hidden xl:flex">
         <div class="relative w-full flex justify-center mb-30">
           <img src="/burgerbillede.svg" alt="billede" />
           <img src="/manddervinker.svg" alt="billede" class="absolute -top-20 left-1/4 -translate-x-1/2" />
@@ -181,3 +181,11 @@ import Primarybutton from "../components/Primarybutton.astro";
     </div>
   </article>
 </MainLayout>
+
+<div class="relative w-full max-w-md mx-auto">
+  <!-- Background or base image -->
+  <img src="/burgerbillede.svg" alt="Base Image" class="w-full h-auto" />
+
+  <!-- Overlay image, positioned absolutely -->
+  <img src="/mandderhænger.svg" alt="Overlay" class="absolute top-[95%] left-1/2 -translate-x-1/2 animate-sway md:top-[500px] md:left-4/5 md:-translate-x-1/2 object-contain" />
+</div>
