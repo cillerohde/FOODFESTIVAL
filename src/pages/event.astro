@@ -100,12 +100,12 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
     <div class="flex flex-row md:flex-row justify-center gap-4 md:gap-20 my-8 px-4 md:px-8 py-8 bounce-up-down">
       <div class="flex flex-col items-center gap-4 md:gap-10">
         <h1 class="text-1xl md:text-5xl brygada-1918-400 font-bold">200 Stande</h1>
-        <img src="/illustrationstande.svg" alt="" class="w-15 md:w-auto" />
+        <img src="/illustrationstande.svg" alt="" class="w-15 md:w-auto animate-[slideInLeft_20s_ease-out_forwards_infinite]" />
       </div>
 
       <div class="flex flex-col items-center gap-4 md:gap-10">
         <h1 class="text-1xl md:text-5xl brygada-1918-400 font-bold">7 Festivalsområder</h1>
-        <img src="/illustrationtelt.svg" alt="" class="w-24 md:w-auto" />
+        <img src="/illustrationtelt.svg" alt="" class="w-24 md:w-auto animate-[slideInRight_20s_ease-out_forwards_infinite]" />
       </div>
     </div>
 
@@ -126,17 +126,16 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
             </div>
           </div>
 
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
             <label for="email" class="text-sm font-medium noto-sans-sora-sompeng-400 text-[14px] sm:text-[20px] whitespace-nowrap mb-2 sm:mb-0">Jeg vil gerne høre mere om næste års foodfestival, min mail er</label>
             <div class="relative flex-1 w-full">
-                <input id="email" name="email" type="email" class="p-3 transition-all duration-200 bg-transparent outline-none border-none w-full" placeholder="Skriv din email..." required />
+              <input id="email" name="email" type="email" class="p-3 transition-all duration-200 bg-transparent outline-none border-none w-full" placeholder="Skriv din email..." required />
             </div>
-        </div>
+          </div>
         </form>
         <div class="flex justify-center mt-6">
           <Sekundaerknap />
         </div>
-
       </div>
     </div>
   </article>
