@@ -128,7 +128,7 @@ import Login from "../components/Login.astro";
 <div class="overflow-hidden w-full relative">
   <a href="/event">
     <div id="text-slider-right" class="flex whitespace-nowrap cursor-pointer overflow-hidden" style="will-change: transform;">
-      <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
+      <div class="slider-content flex items-center justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
         <img src="/ost.svg" alt="" class="w-8 md:w-10 flex-shrink-0" />
         <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[100px] md:max-w-none ml-2">Unika ostesmagning</p>
         <div class="w-[2px] bg-base-200 h-full"></div>
@@ -137,6 +137,14 @@ import Login from "../components/Login.astro";
         <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
       </div>
 
+      <div class="slider-content flex items-stretch justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
+        <img src="/ost.svg" alt="" class="w-8 md:w-10 flex-shrink-0" />
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[100px] md:max-w-none ml-2">Unika ostesmagning</p>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Lær at lave yoghurtbark med Frederik Haun</p>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
+      </div>
     </div>
   </a>
 </div>
@@ -145,6 +153,14 @@ import Login from "../components/Login.astro";
 <div class="overflow-hidden w-full relative">
   <a href="/event">
     <div id="text-slider-left-2" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
+      <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <div class="flex items-center min-w-0">
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium ml-2 truncate max-w-[120px] md:max-w-none">Årets Cocktail 2025 Lørdag 18.00 – 20.00</p>
+        </div>
+        
+      </div>
       <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
         <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Pizza Akrobatisk Show af Danilo fra Fontana.</p>
         <div class="w-[2px] bg-base-200 h-full"></div>
@@ -168,7 +184,15 @@ import Login from "../components/Login.astro";
         <div class="w-[2px] bg-base-200 h-full"></div>
         <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Fiskeauktion på Havet</p>
       </div>
+       <div class="flex items-center justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">DM i Grill Lørdag & Søndag</p>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Copenhagen Distillery</p>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Fiskeauktion på Havet</p>
+      </div>
     </div>
+    
   </a>
 </div>
 
@@ -181,20 +205,25 @@ import Login from "../components/Login.astro";
 
     let currentX = 0;
 
-    const step = () => {
+    const update = () => {
       const maxScroll = slider.scrollWidth / 2;
 
+      // Bevæg slider
       currentX += direction === "left" ? -speed : speed;
 
+      // Reset når den har scrollet én fuld længde
       if (Math.abs(currentX) >= maxScroll) {
-        currentX = 0; // Reset til start
+        currentX = 0;
       }
 
+      // Flyt slider visuelt
       slider.style.transform = `translateX(${currentX}px)`;
-      requestAnimationFrame(step);
+      slider.style.transition = "transform 0s"; // ingen forsinkelse
+
+      requestAnimationFrame(update);
     };
 
-    step();
+    update();
   }
 
   // Start sliders
@@ -203,6 +232,7 @@ import Login from "../components/Login.astro";
   animateSlider("text-slider-right", "right", 1);
   animateSlider("text-slider-right-2", "right", 1);
 </script>
+
 
 
 
