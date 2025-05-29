@@ -94,22 +94,35 @@ import Login from "../components/Login.astro";
 
   <!-- Slidende tekstsektioner i hver deres retning med original opsætning -->
 <!-- SLIDER 1 -->
+<!-- SLIDER 1 -->
 <div class="overflow-hidden w-full relative mt-10">
   <a href="/event">
     <div id="text-slider-left" class="flex whitespace-nowrap cursor-pointer" style="will-change: transform;">
-      <div class="flex items-stretch justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
+      <div class="slider-content flex items-stretch justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
         <div class="flex items-center min-w-0">
           <img src="/hotdog.svg" alt="" class="w-8 md:w-10 flex-shrink-0" />
           <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none ml-2">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
         </div>
         <div class="w-[2px] bg-base-200 h-full"></div>
-        <p class=" flex items-center noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Mad og kaffe med Emma Martiny</p>
+        <p class="flex items-center noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Mad og kaffe med Emma Martiny</p>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <p class="flex items-center noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Hvor sidder smagen i bøffen?</p>
+      </div>
+      <!-- COPY to enable looping -->
+      <div class="slider-content flex items-stretch justify-between min-w-full gap-0 border border-base-200 p- flex-wrap md:flex-nowrap min-h-[60px]">
+        <div class="flex items-center min-w-0">
+          <img src="/hotdog.svg" alt="" class="w-8 md:w-10 flex-shrink-0" />
+          <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none ml-2">Hotdog DM 2025 Søndag 12.00 – 16.00</p>
+        </div>
+        <div class="w-[2px] bg-base-200 h-full"></div>
+        <p class="flex items-center noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Mad og kaffe med Emma Martiny</p>
         <div class="w-[2px] bg-base-200 h-full"></div>
         <p class="flex items-center noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Hvor sidder smagen i bøffen?</p>
       </div>
     </div>
   </a>
 </div>
+
 
 <!-- SLIDER 2 -->
 <div class="overflow-hidden w-full relative">
@@ -123,6 +136,7 @@ import Login from "../components/Login.astro";
         <div class="w-[2px] bg-base-200 h-full"></div>
         <p class="noto-sans-sora-sompeng-400 text-[10px] md:text-[20px] font-medium truncate max-w-[120px] md:max-w-none">Weber Grill Hands On-grillkurser</p>
       </div>
+
     </div>
   </a>
 </div>
@@ -160,38 +174,37 @@ import Login from "../components/Login.astro";
 
 
 
-  <script>
-    // Helper to animate a slider left or right, but stop at boundaries
-    function animateSlider(sliderId, direction = "left", speed = 0.2) {
-      const slider = document.getElementById(sliderId);
-      if (!slider) return;
-      let currentX = 0;
+<script>
+  function animateSlider(sliderId, direction = "left", speed = 1) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+
+    let currentX = 0;
+
+    const step = () => {
       const maxScroll = slider.scrollWidth / 2;
 
-      function step() {
-        if (direction === "left") {
-          currentX -= speed;
-          if (Math.abs(currentX) >= maxScroll) {
-            currentX = 0;
-          }
-        } else {
-          currentX += speed;
-          if (currentX >= maxScroll) {
-            currentX = 0;
-          }
-        }
-        slider.style.transform = `translateX(${currentX}px)`;
-        requestAnimationFrame(step);
-      }
-      step();
-    }
+      currentX += direction === "left" ? -speed : speed;
 
-    // Animate each slider
-    animateSlider("text-slider-left", "left", 1);
-    animateSlider("text-slider-left-2", "left", 1);
-    animateSlider("text-slider-right", "right", 1);
-    animateSlider("text-slider-right-2", "right", 1);
-  </script>
+      if (Math.abs(currentX) >= maxScroll) {
+        currentX = 0; // Reset til start
+      }
+
+      slider.style.transform = `translateX(${currentX}px)`;
+      requestAnimationFrame(step);
+    };
+
+    step();
+  }
+
+  // Start sliders
+  animateSlider("text-slider-left", "left", 1);
+  animateSlider("text-slider-left-2", "left", 1);
+  animateSlider("text-slider-right", "right", 1);
+  animateSlider("text-slider-right-2", "right", 1);
+</script>
+
+
 
   <a href="/event" class="text-base-300 text-center text-[24px] md:text-[40px] underline block mb-50 mt-10 hover:text-info transition-colors duration-200"> SE HELE PROGRAMMET HER </a>
 </MainLayout>
