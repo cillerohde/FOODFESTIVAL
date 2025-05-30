@@ -16,7 +16,7 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
       <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Aktiviter</h1>
       <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Se oversigt over vores mange aktiviteter de følgende dage fredag, lørdag og søndag. Hvor du blandt andet kan deltage i workshops tag med i smageværksted eller træk i forklædet til en cook-along.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 px-8 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-8 px-8 py-8 mt-20">
       <div class="group bg-base-100 hover:bg-base-300 transition-all duration-300 p-8 flex items-center justify-center min-h-[150px] shadow-md hover:shadow-lg border border-base-300 cursor-pointer">
         <h1 class="text-base-300 text-4xl brygada-1918-400 font-bold relative">
           <span class="block group-hover:hidden">FREDAG</span>
@@ -49,7 +49,7 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
   </article>
 
   <article class="p-[16px] sm:p-16">
-    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] p-[16px] sm:p-16 bg-[#0B5BF8]/5">
+    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] p-[16px] sm:p-16 bg-[#0B5BF8]/5 mt-20">
       <div class="ml-8">
         <h1 class="brygada-1918-400 text-[20px] md:text-[50px] mt-7 mb-4">Events</h1>
         <p class="noto-sans-sora-sompeng-400 max-w-lg mt-7 mb-7">Kom med til festen: Danmarks bedste madhåndværkere i landets lækreste kappestrid</p>
@@ -96,7 +96,7 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
     </div>
   </article>
 
-  <article class="p-[16px] sm:p-16 mb-60">
+  <article class="p-[16px] sm:p-16 mb-60 mt-40">
     <div class="flex flex-row md:flex-row justify-center gap-4 md:gap-20 my-8 px-4 md:px-8 py-8 bounce-up-down">
       <div class="flex flex-col items-center gap-4 md:gap-10">
         <h1 class="text-1xl md:text-5xl brygada-1918-400 font-bold">200 Stande</h1>
@@ -115,28 +115,27 @@ import Sekundaerknap from "../components/Sekundaerknap.astro";
   </article>
 
   <article class="p-0 sm:p-0 mb-80">
-    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] bg-gradient-to-br from-[#0B5BF8]/10 to-[#EE8E46]/20">
-      <div class="order-first md:order-none col-span-2 md:col-span-1 rounded-xl p-8 max-w-3xl mx-auto">
-        <h5 class="font-semibold mb-4 text-base-300 brygada-1918-400 flex justify-center text-[28px] md:text-[60px] color-change-2x animate-pulse">HEY!</h5>
-        <form class="flex flex-col space-y-4" autocomplete="off">
+    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] h-150 bg-[url('/formbillede.jpg')] bg-cover bg-center from-[#0B5BF8]/10 to-[#EE8E46]/20">
+      <form class="flex flex-col space-y-4 mb-30" autocomplete="off">
+        <div class="order-first md:order-none rounded-xl p-10 max-w-3xl mx-auto bg-white mt-30">
+          <h5 class="font-semibold mb-4 text-base-300 brygada-1918-400 flex justify-center text-[28px] md:text-[60px] color-change-2x animate-pulse">HEY!</h5>
           <div class="flex items-center gap-4">
             <label for="name" class="text-sm font-medium noto-sans-sora-sompeng-400 text-[14px] sm:text-[20px] whitespace-nowrap">Jeg hedder</label>
             <div class="relative flex-1">
               <input id="name" name="name" type="text" class="p-3 border-none outline-none focus:shadow-lg bg-transparent w-full" placeholder="Skriv dit navn..." required />
             </div>
           </div>
-
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
             <label for="email" class="text-sm font-medium noto-sans-sora-sompeng-400 text-[14px] sm:text-[20px] whitespace-nowrap mb-2 sm:mb-0">Jeg vil gerne høre mere om næste års foodfestival, min mail er</label>
             <div class="relative flex-1 w-full">
               <input id="email" name="email" type="email" class="p-3 transition-all duration-200 bg-transparent outline-none border-none w-full" placeholder="Skriv din email..." required />
             </div>
           </div>
-        </form>
-        <div class="flex justify-center mt-6">
-          <Sekundaerknap />
+          <div class="flex justify-center mt-6">
+            <Sekundaerknap />
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </article>
 </MainLayout>
